@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.cdnfonts.com/css/new-age-vintage" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="/style1.css">
+    <link rel="stylesheet" href="style.css">
+    <title>homepage</title>
+  </head>
+  <body>
+    
+  <main id="showcase">
+
+    <div id="carousel">
+
+      <div class="hideLeft">
+       <img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
+     </div>
+
+     <div class="prevLeftSecond">
+       <img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
+     </div>
+
+     <div class="prev">
+       <img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
+     </div>
+
+     <div class="selected">
+       <img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
+     </div>
+
+     <div class="next">
+       <img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
+     </div>
+
+     <div class="nextRightSecond">
+       <img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
+     </div>
+
+     <div class="hideRight">
+       <img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
+     </div>
+
+   </div>
+
+   <div class="buttons">
+     <button id="prev">Prev</button>
+     <button id="next">Next</button>
+   </div>
+
+  </main>
+    <script>
+      function moveToSelected(element) {
+
+if (element == "next") {
+  var selected = $(".selected").next();
+} else if (element == "prev") {
+  var selected = $(".selected").prev();
+} else {
+  var selected = element;
+}
+
+var next = $(selected).next();
+var prev = $(selected).prev();
+var prevSecond = $(prev).prev();
+var nextSecond = $(next).next();
+
+$(selected).removeClass().addClass("selected");
+
+$(prev).removeClass().addClass("prev");
+$(next).removeClass().addClass("next");
+
+$(nextSecond).removeClass().addClass("nextRightSecond");
+$(prevSecond).removeClass().addClass("prevLeftSecond");
+
+$(nextSecond).nextAll().removeClass().addClass('hideRight');
+$(prevSecond).prevAll().removeClass().addClass('hideLeft');
+
+}
+
+// Eventos teclado
+$(document).keydown(function(e) {
+  switch(e.which) {
+      case 37: // left
+      moveToSelected('prev');
+      break;
+
+      case 39: // right
+      moveToSelected('next');
+      break;
+
+      default: return;
+  }
+  e.preventDefault();
+});
+
+$('#carousel div').click(function() {
+moveToSelected($(this));
+});
+
+$('#prev').click(function() {
+moveToSelected('prev');
+});
+
+$('#next').click(function() {
+moveToSelected('next');
+});
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

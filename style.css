@@ -1,0 +1,263 @@
+@import url('https://fonts.cdnfonts.com/css/new-age-vintage');
+
+html, body {
+  overflow-x:hidden;
+  
+}                
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'New Age Vintage','Times New Roman', sans-serif;
+    background-color: white;
+    overflow-x: hidden;
+}
+header{
+    position: absolute;
+    width: 100%;
+    top: 0%;
+}
+#showcase {
+    
+    background-image: url('/images/front.png');
+    background-size: cover;
+    background-blend-mode: screen;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+#landinglogo{
+  width: 47vh;
+  animation: slidedown 5s forwards;
+  padding: 5%;
+  
+}
+
+@keyframes slidedown{
+  from{
+   transform: translateY(-50vh);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+#landingname{
+  margin-top: 5%;
+  font-size: 5.8vw;
+  animation: slidedown 5s;
+}
+#banner{
+  background-image: url('/images/come\ and\ enjoy.png');
+    background-size: cover;
+    background-position: center;
+    border: 8px solid #000000;
+    
+    width: 100%;
+    height: 70%;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .bannerfont{
+    font-size: 4.5vw;
+  }
+  #mainbackground{
+    background-image: url('/images/background.png');
+      background-size: cover;
+      background-position: top;
+      height: 100%;
+      width: 100%;
+      
+      
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+.showtime{
+  width:95%
+
+}  
+#headingname{
+  font-size: 9.3vw;
+}
+#dates{
+  margin-top: 10%;
+  width: 100%;
+  height: auto;
+} 
+.clgphoto{
+  width: 100%;
+}
+.banner1{
+  width: 100%;
+  
+  position: relative;
+  margin-top: 10%;
+}
+#lights{
+  width: 100vw;
+  height: auto;
+  margin-top: -10%;
+  
+}
+
+#firstday{
+  width:100%;
+  padding:5%;
+}
+.dates1{
+  height:40vh;
+} 
+#curtain1{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  vertical-align: top;
+  align-items: start;
+  animation: curtain1 5s forwards;
+  
+}
+#curtain2{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  vertical-align: top;
+  
+  overflow: hidden;
+  animation: curtain2 10s forwards;
+  
+}
+
+@keyframes curtain1{
+  from{
+   transform: translateX(0);
+  }
+  to{
+    transform: translateX(-130vh);
+  }
+}
+@keyframes curtain2{
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(130vh);
+    
+    
+  }
+  75% {
+    transform: translateX(100vh);
+    width: 0%;
+
+  }
+  100% {
+    transform: translateX(0vh);
+    width: 0%;
+    
+  }
+}
+
+.footer{
+    width: 100%;
+    background-color: white;
+    opacity: 100%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    
+}
+
+.footer .social{
+    text-align : center;
+    padding-bottom: 25px;
+    color:black;
+}
+
+.footer .social a{
+    font-size : 24px;
+    color:inherit;
+    border : 1px solid #ffffff00;
+    width:40px;
+    height:40px;
+    line-height: 48px;
+    text-align: center;
+    border-radius:50%;
+    margin:0 8px;
+    opacity:0.75;
+
+}
+
+.footer .social a:hover{
+    opacity: 0.9;
+}
+
+.footer ul{
+    margin-top:0;
+    padding:0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom:0;
+    text-align :center;
+
+}
+.footer ul li a{
+    color:inherit;
+    text-decoration: none;
+    opacity:0.8
+}
+.footer ul li{
+    display:inline-block;
+    padding:0 15px;
+
+}
+
+.footer ul li a:hover{
+    opacity:1;
+}
+
+.footer .copyright{
+    margin-top: 15px;
+    text-align:center;
+    font-size: 13px;
+    color: #000000;
+}
+#aboutbanner{
+  width: 100%;
+  margin-top: 10%;
+}
+#co-ordinator{
+  width: 100%;
+}
+#details{
+margin-left: 70px;
+width: 263px;
+height: 102px;
+
+/* Radial */
+
+background: radial-gradient(55.88% 55.89% at 50% 49.99%, #7E1B39 40%, #350E3C 100%);
+border-radius: 11px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
