@@ -71,7 +71,10 @@
   <main id="showcase">
 
 
-    <div id="landinglogo" oncontextmenu="return false" draggable="false"></div>
+    <div id="landinglogo" oncontextmenu="return false" draggable="false" style="width:47vh;height:47vh;
+  animation: slidedown 5s forwards;
+    
+    "></div>
 
     <h2 id="landingname">DAKSHYA YANTHRA</h2>
     <img id="curtain1" src="/images/One side curatin 1.webp" alt="">
@@ -89,7 +92,7 @@
       <div class="dates">
         <img id="dates" class="" src="/images/dates.webp" alt="">
       </div>
-      <img class="clgphoto mt-4" src="/images/clgphoto.webp" alt="">
+      <img class="clgphoto mt-4" src="/images/BGremoved.webp" alt="">
       <img class="banner1" src="/images/banner1.webp" alt="">
 
       <center>
@@ -97,48 +100,53 @@
       </center>
 
 
-      <div class="footer">
-        <p class="text-center" style="margin-top: 24px;"> DAKSHA YANTHRA</p>
-        <div class="social">
-          <a href="#" aria-label="our facebook page"><i class="fab fa-facebook"></i></a>
-          <a href="#" aria-label="our instagram page"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="our linkedin page"><i class="fab fa-linkedin"></i></a>
-          <a href="#" aria-label="email us"><i class="fab fa-at"></i></a>
-          <a href="#" aria-label="our twitter page"><i class="fab fa-twitter"></i></a>
-        </div>
-
-        <ul class="list">
-          <li>
-            <a href="#" aria-label="Read our blog">Blog</a>
-          </li>
-          <li>
-            <a href="#" aria-label="contact us">Contact Us</a>
-          </li>
-          <li>
-            <a href="#" aria-label="Terms of Use">Terms</a>
-          </li>
-          <li>
-            <a href="#" aria-label="Privacy Policy">Privacy</a>
-          </li>
-          <li>
-            <a href="#" aria-label="Frequently Asked Questions">FAQ</a>
-          </li>
-        </ul>
-
-        <p class="copyright">
-          <span style="font-family:  sans-serif;">© 2023 Daksha Yanthra, All Rights Reserved. | Trivandrum, Kerala,
-            India.</span>
-        </p>
-      </div>
 
 
     </main>
   </section>
+  <footer class="footer">
+    <p class="text-center" style="margin-top: 24px;"> DAKSHA YANTHRA</p>
+    <div class="social">
+      <a href="#" aria-label="our facebook page"><i class="fab fa-facebook"></i></a>
+      <a href="#" aria-label="our instagram page"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="our linkedin page"><i class="fab fa-linkedin"></i></a>
+      <a href="#" aria-label="email us"><i class="fab fa-at"></i></a>
+      <a href="#" aria-label="our twitter page"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <ul class="list">
+      <li>
+        <a href="#" aria-label="Read our blog">Blog</a>
+      </li>
+      <li>
+        <a href="#" aria-label="contact us">Contact Us</a>
+      </li>
+      <li>
+        <a href="#" aria-label="Terms of Use">Terms</a>
+      </li>
+      <li>
+        <a href="#" aria-label="Privacy Policy">Privacy</a>
+      </li>
+      <li>
+        <a href="#" aria-label="Frequently Asked Questions">FAQ</a>
+      </li>
+    </ul>
+
+    <p class="copyright">
+      <span style="font-family:  sans-serif;">© 2023 Daksha Yanthra, All Rights Reserved. | Trivandrum, Kerala,
+        India.</span>
+    </p>
+  </footer>
 
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
 
   <script>
+    // to scroll to the top on reload
+    $(document).ready(function () {
+      $(this).scrollTop(0);
+    });
+    // 
 
     function img_set(name, url) {
       var r = document.querySelector(':root');
@@ -149,6 +157,7 @@
       return new Promise(resolve => setTimeout(resolve, ms));
     }
 
+    // fixes large screen bug
     onload = async function () {
       await sleep(5000);
       document.getElementById("curtain1").style.display = "none";

@@ -5,86 +5,172 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Official website for the The flagship techno-cultural event Dhaksha Yantra 2023 of College of Engineering, Attingal">
 
   <!-- Bootstrap CSS -->
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link href="https://fonts.cdnfonts.com/css/new-age-vintage" rel="stylesheet">
+  <!-- <link href="https://fonts.cdnfonts.com/css/new-age-vintage" rel="stylesheet"> -->
   <link rel="stylesheet" href="/style.css">
-  <title>homepage</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+  <link rel="icon" href="/images/Logo.webp" type="image/x-icon" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href="/images/Logo_.webp" type="image/x-icon" media="(prefers-color-scheme:light)" />
+  <title>Events</title>
 </head>
 
 <body>
 
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar__">
+      <div class="container-fluid">
+        <div class="jnontainer">
+          <a class="navbar-brand" href="#" aria-label="go to homepage">
+            <img src="/images/Logo.webp" alt="" width="30" height="30">
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item me-4">
+              <a class="nav-link " aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link active" href="#">Events</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#">About</a>
+            </li>
 
+        </div>
+      </div>
+    </nav>
+  </header>
   <section>
 
     <main id="mainbackground">
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="/images/Logo.webp" alt="" width="30" height="30">
-              </a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-              aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                <li class="nav-item me-4">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item me-4">
-                  <a class="nav-link" href="#">Events</a>
-                </li>
-                <li class="nav-item me-4">
-                  <a class="nav-link" href="#">Photos</a>
-                </li>
-                <li class="nav-item me-4">
-                  <a class="nav-link" href="#">About</a>
-                </li>
 
-            </div>
-          </div>
-        </nav>
-      </header>
 
 
       <center>
-        <img id="landinglogo" src="/images/Vector 1.webp" oncontextmenu="return false" draggable="false"
-          style="margin-top: 20%;">
+        <div id="logCover">
+          <div id="landinglogo" oncontextmenu="return false" draggable="false">
+          </div>
+          <h1>Daksha Yanthra</h1>
+        </div>
+
       </center>
 
-      <img class="banner1" src="/images/banner2.webp" alt="">
-      <img id="firstday" src="/images/First Events 1.webp" alt="">
-      <img class="banner1 m-2" src="/images/banner4.webp" alt="">
-      <img id="firstday" src="/images/Banner 1.webp" alt="">
-      <div class="footer">
-        footer
-      </div>
+      <div id="banner1" class="banner1">Schedule</div>
+      <img id="fday" class="clooney" src="/images/First Events 1.webp" alt="">
+      <div id="banner2" class="banner1">Sponsors</div>
+
+      <img id="sday" class="clooney" src="/images/Banner 1.webp" alt="">
+
 
     </main>
   </section>
 
+  <footer class="footer">
+    <p class="text-center" style="margin-top: 24px;"> DAKSHA YANTHRA</p>
+    <div class="social">
+      <a href="#" aria-label="our facebook page"><i class="fab fa-facebook"></i></a>
+      <a href="#" aria-label="our instagram page"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="our linkedin page"><i class="fab fa-linkedin"></i></a>
+      <a href="#" aria-label="email us"><i class="fab fa-at"></i></a>
+      <a href="#" aria-label="our twitter page"><i class="fab fa-twitter"></i></a>
+    </div>
 
+    <ul class="list">
+      <li>
+        <a href="#" aria-label="Read our blog">Blog</a>
+      </li>
+      <li>
+        <a href="#" aria-label="contact us">Contact Us</a>
+      </li>
+      <li>
+        <a href="#" aria-label="Terms of Use">Terms</a>
+      </li>
+      <li>
+        <a href="#" aria-label="Privacy Policy">Privacy</a>
+      </li>
+      <li>
+        <a href="#" aria-label="Frequently Asked Questions">FAQ</a>
+      </li>
+    </ul>
+
+    <p class="copyright">
+      <span style="font-family:  sans-serif;">© 2023 Daksha Yanthra, All Rights Reserved. | Trivandrum, Kerala,
+        India.</span>
+    </p>
+  </footer>
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <script>
-    setInterval(function () {
-      document.getElementById("landinglogo").src = "/images/Vector 1.webp";
-      $(this).find("#landinglogo").fadeOut(1000);
-    }, 1000);
-    setInterval(function () {
-      document.getElementById("landinglogo").src = "/images/Changes=Vector 4.webp";
-      $(this).find("#landinglogo").fadeOut(1000);
-    }, 2000);
-    setInterval(function () {
-      document.getElementById("landinglogo").src = "/images/Vector 6.webp";
-      $(this).find("#landinglogo").fadeOut(1000);
-    }, 3000);
+    $(document).ready(function () {
+      $(this).scrollTop(0);
+    });
+    function img_set(name, url) {
+      var r = document.querySelector(':root');
+      r.style.setProperty("--" + name, "url('" + url + "')");
+
+    }
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    // fixes large screen bug
+
+    async function logo_anim() {
+      var interval = 1500;
+      img_set('landing_logo', '/images/Vector 1.webp');
+      await sleep(interval);
+      img_set('landing_logo', '/images/Changes=Vector 4.webp');
+      await sleep(interval);
+      img_set('landing_logo', '/images/Vector 6.webp');
+      await sleep(interval);
+
+    }
+
+    var anim = [{ opacity: 0 }, { opacity: 1 }]
+    async function clooney() {
+      var interval = 300;
+      banner1 = document.getElementById("banner1");
+      banner1.animate(anim, interval);
+      await sleep(interval);
+      banner1.style.opacity = 1;
+      banner2 = document.getElementById("banner2");
+      banner2.animate(anim, interval);
+      await sleep(interval);
+      banner2.style.opacity = 1;
+      fday = document.getElementById("fday");
+      fday.animate(anim, interval);
+      await sleep(interval);
+      fday.style.opacity = 1;
+      sday = document.getElementById("sday");
+      sday.animate(anim, interval);
+      await sleep(interval);
+      sday.style.opacity = 1;
+
+    }
+
+
+
+    window.onload = async function () {
+      await sleep(700)
+      clooney();
+
+    }
+    setInterval(logo_anim, 4500);
   </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
