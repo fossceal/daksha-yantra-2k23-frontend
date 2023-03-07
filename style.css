@@ -48,14 +48,33 @@ header {
 }
 
 #landinglogo {
-  width: 47vh;
-  height: 47vh;
-  animation: slidedown 5s forwards;
+  width: 12vh;
+  height: 12vh;
   padding: 5%;
   background: var(--landing_logo);
   background-size: cover;
   background-position: center;
   transition: 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+#logCover {
+  /* width: 100vw; */
+  width: 76vw;
+  /* height: 47vh; */
+  padding: 5%;
+  animation: slidedown 700ms forwards;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  background: #00000045;
+  border-radius: 12px;
+  /* backdrop-filter: blur(10px); */
 }
 .navbar__ {
   backdrop-filter: blur(10px);
@@ -64,10 +83,18 @@ header {
 }
 @keyframes slidedown {
   from {
-    transform: translateY(-50vh);
+    transform: translateY(50vh);
+    scale: 0;
+    filter: blur(12px);
+    backdrop-filter: blur(0px);
+    width: 0vw;
   }
   to {
     transform: translateY(0);
+    scale: 1;
+    opacity: 1;
+    filter: blur(0px);
+    backdrop-filter: blur(10px);
   }
 }
 #landingname {
@@ -93,7 +120,7 @@ header {
   font-size: 4.5vw;
 }
 #mainbackground {
-  background-image: url("/images/background.webp");
+  background-image: url("/images/front.webp");
   background-size: cover;
   background-position: top;
   height: 100%;
@@ -121,9 +148,14 @@ header {
 }
 .banner1 {
   width: 100%;
-
+  font-size: 45px;
+  text-align: center;
   position: relative;
   margin-top: 10%;
+  /* background: url("/images/banner2.webp"); */
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
 }
 #lights {
   width: 100vw;
@@ -131,9 +163,10 @@ header {
   margin-top: -10%;
 }
 
-#firstday {
+.clooney {
   width: 100%;
   padding: 5%;
+  opacity: 0;
 }
 .dates1 {
   height: 40vh;
@@ -192,6 +225,20 @@ header {
   opacity: 100%;
   border-top-left-radius: 10%;
   border-top-right-radius: 10%;
+  /* position: absolute; */
+  /* bottom: 0px; */
+}
+main {
+  /* height: 100vh; */
+  padding: 10vh 12px 12px 12px;
+  background: url("/images/background.webp");
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .footer .social {
@@ -200,10 +247,47 @@ header {
   color: black;
 }
 
+.modalWindow {
+  width: 90vw;
+  height: 70vh;
+  background-color: rgb(0 0 0 / 32%);
+  backdrop-filter: blur(10px);
+  border-radius: 35px;
+  overflow: hidden;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 120px 120px;
+  grid-template-rows: 120px;
+  grid-gap: 12px;
+}
+.call_button {
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: hsl(359deg 19% 15%);
+  color: #ff5d5d;
+  transition: 400ms;
+}
+
+.call_button:hover {
+  background: #0fff7b;
+  color: hsl(152, 19%, 15%);
+}
+@media screen and (max-width: 400px) {
+  .modalWindow {
+    width: 90vw;
+    height: 70vh;
+    padding: 20px;
+    grid-template-columns: 120px 120px;
+    grid-template-rows: 120px 120px;
+  }
+}
+
 .footer .social a {
   font-size: 24px;
   color: inherit;
-  border: 1px solid #ffffff00;
+  border: 1px solid #00000000;
   width: 40px;
   height: 40px;
   line-height: 48px;
