@@ -7,7 +7,7 @@ const Daksha = `        <div class="eventNugget daksha" id="ev">
             <p style="font-size:12px">Competition</p>
         </div>`
 const Yanthra = `
-        <div class="eventNugget yanthra" id="ev">
+        <div class="eventNugget yanthra" id="ev" onclick="redirect('URL')">
             <h4>EVNT<span class="material-symbols-rounded">CHAMP</span>
             </h4>
             <p>DTT</p>

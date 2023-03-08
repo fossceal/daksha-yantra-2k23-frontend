@@ -1,7 +1,7 @@
 .eventsContainer {
   width: 80vw;
   height: 70vh;
-  background: #525252a1;
+  background: #52525200;
   border-radius: 12px;
   backdrop-filter: blur(12px);
   display: flex;
@@ -27,43 +27,47 @@
   align-content: center;
   align-items: flex-start;
   flex-wrap: nowrap;
+  opacity: 0;
+  transition: 200ms;
 }
 .daksha {
-  background: #ff924561;
+  background: #483318;
   color: #fff167;
 }
 .daksha:hover {
-  background: #ff9245;
+  background: #ffa05c;
   color: #464117;
   transform: translate(0px, -8px);
   box-shadow: 0px 0px 12px 0px #ff9245;
 }
 .daksha > p1 {
-  background-color: #464117;
+  background-color: #675d00;
   padding: 4px;
   border-radius: 6px;
+  transition: 300ms;
 }
 .daksha:hover p1 {
   color: #ff9245;
 }
 
 .yanthra {
-  background: hsla(225, 53%, 34%, 0.38);
-  color: hsl(213deg 100% 75%);
+  background: #6a1d23;
+  color: hsl(0deg 100% 80%);
 }
 .yanthra:hover {
-  background: hsl(213, 100%, 56%);
-  color: hsl(225, 53%, 34%);
+  background: #ff1f1f;
+  color: hsl(0deg 54% 20%);
   transform: translate(0px, -8px);
-  box-shadow: 0px 0px 12px 0px hsl(213, 100%, 56%);
+  box-shadow: 0px 0px 12px 0px #ff1f1f;
 }
 .yanthra > p1 {
-  background-color: hsl(225, 53%, 34%);
+  background-color: hsl(0, 60%, 39%);
   padding: 4px;
   border-radius: 6px;
+  transition: 300ms;
 }
 .yanthra:hover p1 {
-  color: hsl(213, 100%, 56%);
+  color: #ff1f1f;
 }
 
 .eventNugget > h4,
