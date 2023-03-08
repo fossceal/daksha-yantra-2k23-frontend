@@ -17,6 +17,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
+  <link rel="stylesheet" href="EventBox.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <link rel="icon" href="/images/Logo.webp" type="image/x-icon" media="(prefers-color-scheme: dark)" />
   <link rel="icon" href="/images/Logo_.webp" type="image/x-icon" media="(prefers-color-scheme:light)" />
@@ -38,20 +41,20 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <ul class=" navbar-nav  my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
             <li class="nav-item me-4">
-              <a class="nav-link " aria-current="page" href="#">Home</a>
+              <a class="nav-link " aria-current="page" href="/" aria-label="go to homepage">Home</a>
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link active" href="#">Events</a>
+              <a class="nav-link active" href="" aria-label="go to events page">Events</a>
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link" href="#">Photos</a>
+              <a class="nav-link" href="photos.html" aria-label="go to album page">Photos</a>
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="about.html" aria-label="go to about page">About</a>
             </li>
-
+          </ul>
         </div>
       </div>
     </nav>
@@ -72,7 +75,8 @@
       </center>
 
       <div id="banner1" class="banner1">Schedule</div>
-      <img id="fday" class="clooney" src="/images/First Events 1.webp" alt="">
+      <div class=" eventsContainer" id="eventContainer">
+      </div>
       <div id="banner2" class="banner1">Sponsors</div>
 
       <img id="sday" class="clooney" src="/images/Banner 1.webp" alt="">
@@ -84,30 +88,14 @@
   <footer class="footer">
     <p class="text-center" style="margin-top: 24px;"> DAKSHA YANTHRA</p>
     <div class="social">
-      <a href="#" aria-label="our facebook page"><i class="fab fa-facebook"></i></a>
+
       <a href="#" aria-label="our instagram page"><i class="fab fa-instagram"></i></a>
-      <a href="#" aria-label="our linkedin page"><i class="fab fa-linkedin"></i></a>
+
       <a href="#" aria-label="email us"><i class="fab fa-at"></i></a>
-      <a href="#" aria-label="our twitter page"><i class="fab fa-twitter"></i></a>
+
     </div>
 
-    <ul class="list">
-      <li>
-        <a href="#" aria-label="Read our blog">Blog</a>
-      </li>
-      <li>
-        <a href="#" aria-label="contact us">Contact Us</a>
-      </li>
-      <li>
-        <a href="#" aria-label="Terms of Use">Terms</a>
-      </li>
-      <li>
-        <a href="#" aria-label="Privacy Policy">Privacy</a>
-      </li>
-      <li>
-        <a href="#" aria-label="Frequently Asked Questions">FAQ</a>
-      </li>
-    </ul>
+
 
     <p class="copyright">
       <span style="font-family:  sans-serif;">© 2023 Daksha Yanthra, All Rights Reserved. | Trivandrum, Kerala,
@@ -115,7 +103,10 @@
     </p>
   </footer>
   <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <script src="EventsHydrator.js"></script>
+
   <script>
+
     $(document).ready(function () {
       $(this).scrollTop(0);
     });
@@ -148,14 +139,14 @@
       banner1.animate(anim, interval);
       await sleep(interval);
       banner1.style.opacity = 1;
+      eventContainer = document.getElementById("eventContainer");
+      eventContainer.animate(anim, interval);
+      await sleep(interval);
+      eventContainer.style.opacity = 1;
       banner2 = document.getElementById("banner2");
       banner2.animate(anim, interval);
       await sleep(interval);
       banner2.style.opacity = 1;
-      fday = document.getElementById("fday");
-      fday.animate(anim, interval);
-      await sleep(interval);
-      fday.style.opacity = 1;
       sday = document.getElementById("sday");
       sday.animate(anim, interval);
       await sleep(interval);
