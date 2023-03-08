@@ -1,0 +1,251 @@
+{
+    "Daksha": [
+        {
+            "name": "Solo Song",
+            "type": "Competition",
+            "event": "0",
+            "time": "9:30 am to 10:00 am",
+            "venue": "Main Stage"
+        },
+        {
+            "name": "Solo Dance",
+            "type": "Competition",
+            "event": "0",
+            "time": "10:00 am to 10:30 am",
+            "venue": "Main Stage"
+        },
+        {
+            "name": "Fashion Show",
+            "type": "Competition",
+            "event": "0",
+            "time": "10:30 am to 11:30 am",
+            "venue": "Main Stage"
+        },
+        {
+            "name": "Duo Dance",
+            "type": "Competition",
+            "event": "0",
+            "time": "11:30 am to 12:30 pm",
+            "venue": "Main Stage"
+        },
+        {
+            "name": "Body Building",
+            "type": "Competition",
+            "event": "0",
+            "time": "12:30 pm to 2:00 pm",
+            "venue": "TBD"
+        },
+        {
+            "name": "Standup Comedy",
+            "type": "Competition",
+            "event": "0",
+            "time": "12:30 pm to 1:00 pm",
+            "venue": "TBD"
+        },
+        {
+            "name": "Blunder Speech",
+            "type": "Competition",
+            "event": "0",
+            "time": "1:00 pm to 1:30 pm",
+            "venue": "Main Stage"
+        },
+        {
+            "name": "Spot Dubbing",
+            "type": "Competition",
+            "event": "0",
+            "time": "1:30 pm to 2:00 pm",
+            "venue": "Main Stage"
+        },
+        {
+            "name": "Persona (final)",
+            "type": "Competition",
+            "event": "0",
+            "time": "2:00 pm to 3:00 pm",
+            "venue": "Main Stage"
+        },
+        {
+            "name": "Spot Choreo",
+            "type": "Competition",
+            "event": "0",
+            "time": "3:00 pm to 3:30 pm",
+            "venue": "TBD"
+        },
+        {
+            "name": "Jam (final)",
+            "type": "Competition",
+            "event": "0",
+            "time": "3:30 pm to 4:00 pm",
+            "venue": "Main Stage"
+        },
+        {
+            "name": "Bilamo",
+            "type": "Competition",
+            "event": "0",
+            "time": "4:00 pm to 6:00 pm",
+            "venue": "Main Stage"
+        }
+    ],
+    "Yanthra": [
+        {
+            "name": "Hackathon",
+            "type": "Competition",
+            "event": "1",
+            "time": "9:30 am (24hrs)",
+            "venue": "Auditorium"
+        },
+        {
+            "name": "UI/UX Design",
+            "type": "Competition",
+            "event": "1",
+            "time": "3:30 pm to 4:30 pm",
+            "venue": "Computer Lab 2/Foss Lab"
+        },
+        {
+            "name": "Quiz",
+            "type": "Competition",
+            "event": "1",
+            "time": "11:30 am to 12:00pm",
+            "venue": "L4"
+        },
+        {
+            "name": "Type Racing",
+            "type": "Competition",
+            "event": "1",
+            "time": "11:35 am to 11:50 am",
+            "venue": "Computer Lab 1"
+        },
+        {
+            "name": "Circuit Debugging",
+            "type": "Competition",
+            "event": "1",
+            "time": "12:30 pm to 1:30 pm",
+            "venue": "Electronics Lab"
+        },
+        {
+            "name": "Line Follower",
+            "type": "Competition",
+            "event": "1",
+            "time": "1:15 pm to 2:15 pm",
+            "venue": "Portico"
+        },
+        {
+            "name": "Impressario",
+            "type": "Competition",
+            "event": "1",
+            "time": "12:00 pm to 1:00 pm",
+            "venue": "Main Stage"
+        },
+        {
+            "name": "Treasure Hunt",
+            "type": "Competition",
+            "event": "1",
+            "time": "1:00 pm to 5:30 pm",
+            "venue": "Campus"
+        },
+        {
+            "name": "Coding",
+            "event": "1",
+            "type": "Competition",
+            "time": "10:30 am to 11:30 am",
+            "venue": "FOSS Lab"
+        },
+        {
+            "name": "Youth Parliament on Tourism",
+            "type": "Conclave",
+            "event": "1",
+            "time": "1:00pm to 4:30pm",
+            "venue": "SPDK Hall"
+        },
+        {
+            "name": "Embedded Systems and IOT",
+            "type": "Workshop",
+            "event": "1",
+            "time": "10:00 am to 12:00 pm",
+            "venue": "L6"
+        },
+        {
+            "name": "Photography",
+            "type": "Workshop",
+            "event": "1",
+            "time": "4:00 pm to 6:00 pm",
+            "venue": "L6"
+        },
+        {
+            "name": "Metaverse",
+            "type": "Workshop",
+            "event": "1",
+            "time": "12:00 pm to 2:00 pm",
+            "venue": "L12"
+        },
+        {
+            "name": "Stock Trading",
+            "type": "Workshop",
+            "event": "1",
+            "time": "10:00 am to 12:00 pm",
+            "venue": "L7"
+        },
+        {
+            "name": "Game Development",
+            "type": "Workshop",
+            "event": "1",
+            "time": "4:00 pm to 6:00 pm",
+            "venue": "L7"
+        },
+        {
+            "name": "EV",
+            "type": "Workshop",
+            "event": "1",
+            "time": "2:00 pm to 4:00 pm",
+            "venue": "L8"
+        },
+        {
+            "name": "Robotics",
+            "type": "Workshop",
+            "event": "1",
+            "time": "2:00 pm to 4:00 pm",
+            "venue": "L8"
+        },
+        {
+            "name": "Video Editing",
+            "type": "Workshop",
+            "event": "1",
+            "time": "12:00 pm to 2:00 pm",
+            "venue": "L10"
+        },
+        {
+            "name": "VR Games",
+            "event": "1",
+            "type": "Games",
+            "time": "All Day",
+            "venue": "L5"
+        },
+        {
+            "name": "Startup Expo",
+            "event": "1",
+            "type": "Expo",
+            "time": "All Day",
+            "venue": "DH"
+        },
+        {
+            "name": "Project Expo",
+            "event": "1",
+            "type": "Expo",
+            "time": "All Day",
+            "venue": "DH"
+        },
+        {
+            "name": "Campus Ambassador",
+            "event": "1",
+            "type": "Special Event",
+            "time": "",
+            "venue": ""
+        },
+        {
+            "name": "Panel Discussion on Menstruation and Other Hurdles in Professional Growth",
+            "event": "1",
+            "type": "Discussion",
+            "time": "10:30 am to 11:30 am",
+            "venue": "Main Stage"
+        }
+    ]
+}

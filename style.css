@@ -97,10 +97,18 @@ header {
     backdrop-filter: blur(10px);
   }
 }
+@keyframes SlideDown {
+  from {
+    transform: translateY(-50vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 #landingname {
   margin-top: 5%;
   font-size: 5.8vw;
-  animation: slidedown 5s;
+  animation: SlideDown 5s;
 }
 #banner {
   background-image: url("/images/come\ and\ enjoy.webp");
