@@ -143,6 +143,13 @@
       eventContainer.animate(anim, interval);
       await sleep(interval);
       eventContainer.style.opacity = 1;
+      const nuggets = document.getElementsByClassName("eventNugget")
+      for (let i = 0; i < nuggets.length; i++) {
+        await sleep(interval / 10);
+        nuggets[i].style.opacity = 1;
+      }
+
+
       banner2 = document.getElementById("banner2");
       banner2.animate(anim, interval);
       await sleep(interval);
@@ -160,6 +167,10 @@
       await sleep(700)
       clooney();
 
+    }
+
+    function redirect(href) {
+      window.location.href = href
     }
     setInterval(logo_anim, 4500);
   </script>
