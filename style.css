@@ -15,7 +15,7 @@ body {
   padding: 0;
 }
 :root {
-  --landing_logo: url("/images/Vector 1.webp");
+  --landing_logo: url("images/Vector 1.webp");
   --callButtonBG: #351111;
 }
 body {
@@ -34,7 +34,7 @@ header {
   top: 0%;
 }
 #showcase {
-  background-image: url("/images/front.webp");
+  background-image: url("images/front.webp");
   background-size: cover;
   background-blend-mode: screen;
   background-position: center;
@@ -112,7 +112,7 @@ header {
   animation: SlideDown 5s;
 }
 #banner {
-  background-image: url("/images/come\ and\ enjoy.webp");
+  background-image: url("images/come\ and\ enjoy.webp");
   background-size: cover;
   background-position: center;
   border: 8px solid #000000;
@@ -129,7 +129,7 @@ header {
   font-size: 4.5vw;
 }
 #mainbackground {
-  background-image: url("/images/front.webp");
+  background-image: url("images/front.webp");
   background-size: cover;
   background-position: top;
   height: 100%;
@@ -178,7 +178,7 @@ header {
   text-align: center;
   position: relative;
   margin-top: 5%;
-  /* background: url("/images/banner2.webp"); */
+  /* background: url("images/banner2.webp"); */
   background-size: cover;
   background-position: center;
   opacity: 0;
@@ -257,7 +257,7 @@ header {
 main {
   /* height: 100vh; */
   padding: 10vh 12px 12px 12px;
-  background: url("/images/background.webp");
+  background: url("images/background.webp");
   background-size: cover;
   background-position: top;
   display: flex;
