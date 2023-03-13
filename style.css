@@ -16,6 +16,7 @@ body {
 }
 :root {
   --landing_logo: url("/images/Vector 1.webp");
+  --callButtonBG: #351111;
 }
 body {
   margin: 0;
@@ -72,7 +73,7 @@ header {
   align-content: center;
   align-items: center;
   justify-content: center;
-  background: #00000045;
+  background: #ffffff45;
   border-radius: 12px;
   /* backdrop-filter: blur(10px); */
 }
@@ -148,18 +149,35 @@ header {
 }
 #dates {
   margin-top: 10%;
-  width: 100%;
+  width: 100vw;
   height: auto;
 }
 .clgphoto {
   width: 100%;
+}
+
+.imgCanvas {
+  /* width: 71vw; */
+  height: 18vh;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
+  margin: 12px;
+}
+.canvasContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 .banner1 {
   width: 100%;
   font-size: 45px;
   text-align: center;
   position: relative;
-  margin-top: 10%;
+  margin-top: 5%;
   /* background: url("/images/banner2.webp"); */
   background-size: cover;
   background-position: center;
@@ -263,33 +281,142 @@ main {
   border-radius: 35px;
   overflow: hidden;
   padding: 24px;
-  display: grid;
-  grid-template-columns: 120px 120px;
-  grid-template-rows: 120px;
-  grid-gap: 12px;
+  display: flex;
+
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
 }
 .call_button {
   outline: none;
   border: none;
   border-radius: 12px;
+  display: flex;
   cursor: pointer;
-  background: hsl(359deg 19% 15%);
-  color: #ff5d5d;
-  transition: 400ms;
+  background: hsl(359deg 78% 35%);
+  color: #f3e3c6;
+  transition: 200ms;
+  width: 20vw;
+  height: 25vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+  opacity: 0;
 }
-
+.call_button > div > .convenor {
+  font-size: 18px;
+  background: #f3e3c6;
+  padding: 6px;
+  border-radius: 4px;
+  display: flex;
+  margin: 4px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--callButtonBG);
+  transition: 200ms;
+}
+.call_button > div > .medium_Whatsapp {
+  font-size: 18px;
+  background: #f3e3c6;
+  padding: 6px;
+  border-radius: 4px;
+  display: flex;
+  margin: 4px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--callButtonBG);
+  transition: 200ms;
+}
+.call_button > div > .medium_Whatsapp > i {
+  margin: 4px;
+}
+.call_button > h1 {
+  margin: 8px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.call_button > p {
+  margin: 8px;
+  font-weight: 400;
+  font-size: 16px;
+}
 .call_button:hover {
+  background: #f3e3c6;
+  /* background: #e72c2f; */
+  color: hsl(359deg 78% 35%);
+  box-shadow: 0 0 10px 3px #f3e3c6;
+  transform: translateY(-8px);
+}
+.call_button:hover > div > .medium_Whatsapp {
+  background: hsl(359deg 78% 35%);
+  color: #f3e3c6;
+}
+.call_button:hover > div > .convenor {
+  background: hsl(359deg 78% 35%);
+  color: #f3e3c6;
+}
+.call_button:focus {
   background: #0fff7b;
   color: hsl(152, 19%, 15%);
+  box-shadow: 0 0 10px 3px #0fff7b;
+  transform: translateY(-8px);
 }
-@media screen and (max-width: 400px) {
-  .modalWindow {
-    width: 90vw;
-    height: 70vh;
-    padding: 20px;
-    grid-template-columns: 120px 120px;
-    grid-template-rows: 120px 120px;
-  }
+.call_button:focus > div > .medium_Whatsapp {
+  background: hsl(152, 19%, 15%);
+  color: #0fff7b;
+}
+.call_button:focus > div > .convenor {
+  background: hsl(152, 19%, 15%);
+  color: #0fff7b;
+}
+.tagContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: calc(100% - 48px);
+}
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  margin: 3px;
+}
+.aboutText {
+  padding: 4%;
+  font-size: 32px;
+  background: #8d1e1d;
+  backdrop-filter: blur(10px);
+  margin-top: 10%;
+  color: #ffc425;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.imgSponsor {
+  width: 40vw;
+  height: auto;
+  border-radius: 8px;
+}
+.learnMore {
+  width: 30vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
 }
 
 .footer .social a {
@@ -339,7 +466,7 @@ main {
   color: #000000;
 }
 #aboutbanner {
-  width: 100%;
+  width: 111%;
   margin-top: 10%;
 }
 #co-ordinator {
@@ -390,4 +517,28 @@ main {
 
 ::-webkit-scrollbar-corner {
   color: #000;
+}
+@media screen and (max-width: 800px) {
+  .modalWindow {
+    width: 90vw;
+    height: 70vh;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .learnMore {
+    width: 70vw;
+  }
+  .call_button {
+    width: 70vw;
+  }
+  .aboutText {
+    padding: 4%;
+    font-size: 18px;
+    margin-top: 10%;
+    border-radius: 12px;
+  }
 }
