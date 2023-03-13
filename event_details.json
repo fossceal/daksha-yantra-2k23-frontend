@@ -1,14 +1,14 @@
 {
     "Daksha": [
         {
-            "name": "Solo Song",
+            "name": "Unplugged (Solo Song)",
             "type": "Competition",
             "event": "0",
             "time": "9:30 am to 10:00 am",
             "venue": "Main Stage"
         },
         {
-            "name": "Solo Dance",
+            "name": "Groove (Solo Dance)",
             "type": "Competition",
             "event": "0",
             "time": "10:00 am to 10:30 am",
@@ -245,6 +245,22 @@
             "event": "1",
             "type": "Discussion",
             "time": "10:30 am to 11:30 am",
+            "venue": "Main Stage"
+        }
+    ],
+    "Special": [
+        {
+            "name": "Sea of Simulation",
+            "type": "Games",
+            "event": "3",
+            "time": "All Day",
+            "venue": "Campus"
+        },
+        {
+            "name": "Beats & Basslines",
+            "type": "Concert",
+            "event": "3",
+            "time": "6:00pm",
             "venue": "Main Stage"
         }
     ]

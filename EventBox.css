@@ -21,6 +21,7 @@
   border-radius: 12px;
   cursor: pointer;
   transition: 100ms;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,7 +53,7 @@
 
 .yanthra {
   background: #6a1d23;
-  color: hsl(0deg 100% 80%);
+  color: hsl(0deg 100% 87%);
 }
 .yanthra:hover {
   background: #ff1f1f;
@@ -68,6 +69,26 @@
 }
 .yanthra:hover p1 {
   color: #ff1f1f;
+}
+
+.special {
+  background: #0d2d34;
+  color: hsl(216, 100%, 80%);
+}
+.special:hover {
+  background: #00fffc;
+  color: hsl(216, 100%, 20%);
+  transform: translate(0px, -8px);
+  box-shadow: 0px 0px 12px 0px #00fffc;
+}
+.special > p1 {
+  background-color: hsl(216, 100%, 39%);
+  padding: 4px;
+  border-radius: 6px;
+  transition: 300ms;
+}
+.special:hover p1 {
+  color: #00fffc;
 }
 
 .eventNugget > h4,
@@ -94,12 +115,7 @@ p {
   margin: 0px;
 }
 
-.material-symbols-rounded {
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
-  margin: 3px;
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .eventNugget {
     width: 90%;
   }
