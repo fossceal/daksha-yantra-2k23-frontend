@@ -91,12 +91,12 @@
   </section>
   <section>
     <main id="mainbackground">
-      <div style="    width: 67vw;
+      <div style="    /* width: 854px; */
     margin: 24px;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     overflow: hidden;
-    height: 50vh;
-    box-shadow: 0px 0px 14px #ff0b00;" onclick="playpause()">
+    height: 30%;
+    /* box-shadow: 0px 0px 14px #ff0b00; */" onclick="playpause()">
         <video autoplay="true" style="width:100%" id="intro" loop="true">
           <source src="/images/Out3.mp4">
         </video>
@@ -111,7 +111,7 @@
 
       <center>
 
-        <img id="lights" src="/images/Lights=on4.webp" alt="" oncontextmenu="return false" draggable="false">
+        <img id="lights" src="/images/LightsOn4.webp" alt="" oncontextmenu="return false" draggable="false">
       </center>
 
 
@@ -232,11 +232,11 @@ Trilok events
 
   <script>
     setInterval(function () {
-      document.getElementById("lights").src = "/images/Lights=On4.webp";
+      document.getElementById("lights").src = "/images/LightsOn4.webp";
       $(this).find("#lignhts").fadeOut(1000);
     }, 1000);
     setInterval(function () {
-      document.getElementById("lights").src = "/images/Lights=Off.webp";
+      document.getElementById("lights").src = "/images/LightsOff.webp";
       $(this).find("#lignhts").fadeOut(1000);
     }, 2000);
 
