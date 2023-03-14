@@ -1,0 +1,125 @@
+.eventsContainer {
+  width: 80vw;
+  height: 70vh;
+  background: #52525200;
+  border-radius: 12px;
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  overflow-y: scroll;
+  padding: 12px;
+  opacity: 0;
+}
+
+.eventNugget {
+  width: 30%;
+  margin: 9px;
+  padding: 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 100ms;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  opacity: 0;
+  transition: 200ms;
+}
+.daksha {
+  background: #483318;
+  color: #fff167;
+}
+.daksha:hover {
+  background: #ffa05c;
+  color: #464117;
+  transform: translate(0px, -8px);
+  box-shadow: 0px 0px 12px 0px #ff9245;
+}
+.daksha > p1 {
+  background-color: #675d00;
+  padding: 4px;
+  border-radius: 6px;
+  transition: 300ms;
+}
+.daksha:hover p1 {
+  color: #ff9245;
+}
+
+.yanthra {
+  background: #6a1d23;
+  color: hsl(0deg 100% 87%);
+}
+.yanthra:hover {
+  background: #ff1f1f;
+  color: hsl(0deg 54% 20%);
+  transform: translate(0px, -8px);
+  box-shadow: 0px 0px 12px 0px #ff1f1f;
+}
+.yanthra > p1 {
+  background-color: hsl(0, 60%, 39%);
+  padding: 4px;
+  border-radius: 6px;
+  transition: 300ms;
+}
+.yanthra:hover p1 {
+  color: #ff1f1f;
+}
+
+.special {
+  background: #0d2d34;
+  color: hsl(216, 100%, 80%);
+}
+.special:hover {
+  background: #00fffc;
+  color: hsl(216, 100%, 20%);
+  transform: translate(0px, -8px);
+  box-shadow: 0px 0px 12px 0px #00fffc;
+}
+.special > p1 {
+  background-color: hsl(216, 100%, 39%);
+  padding: 4px;
+  border-radius: 6px;
+  transition: 300ms;
+}
+.special:hover p1 {
+  color: #00fffc;
+}
+
+.eventNugget > h4,
+p {
+  margin: 0px;
+  cursor: inherit;
+}
+
+.eventNugget > h4 {
+  font-size: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.eventNugget > p {
+  font-size: 18px;
+}
+
+.eventNugget > p1 {
+  font-size: 14px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .eventNugget {
+    width: 90%;
+  }
+  .eventsContainer {
+    width: 90vw;
+  }
+}
