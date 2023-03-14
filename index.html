@@ -85,34 +85,74 @@
   </main>
   <section>
 
-    <main id="banner">
+    <div id="banner">
       <h3 class="bannerfont m-4"> COME AND ENJOY WITH US ALL</h3>
-    </main>
+    </div>
   </section>
   <section>
     <main id="mainbackground">
-      <div style="    /* width: 854px; */
-    margin: 24px;
-    /* border-radius: 12px; */
-    overflow: hidden;
-    height: 30%;
-    /* box-shadow: 0px 0px 14px #ff0b00; */" onclick="playpause()">
-        <video autoplay="true" style="width:100%" id="intro" loop="true">
-          <source src="images/Out3.mp4">
-        </video>
-      </div>
+
       <img class="showtime mt-4" src="images/showtime.webp" alt="">
       <h2 id="headingname">APRIL</h2>
       <div class="dates">
         <img id="dates" class="" src="images/wha.png" alt="">
       </div>
-      <img class="clgphoto mt-4" src="images/building.png" alt="">
-      <img class="banner1" src="images/banner1.webp" alt="">
 
-      <center>
 
-        <img id="lights" src="images/Lightson4.webp" alt="" oncontextmenu="return false" draggable="false">
-      </center>
+
+
+
+
+      <div style="    /* background-color: rgb(0 0 0 / 67%); */
+    backdrop-filter: blur(0px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 64vw;
+    height: 36vw;
+margin-bottom: 24vh;
+    z-index: 4;
+" onclick="playpause()">
+        <img id="lights" src="images/445.png" alt="" onclick="playpause()" oncontextmenu="return false"
+          draggable="false" style="    width: 90vw;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -16%);
+">
+        <img id="lights" src="images/frame.png" alt="" oncontextmenu="return false" draggable="false" style="  
+              width: 103%;
+    height: 104%;
+    position: relative;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -41%); ">
+        <video style="    width: 63vw;
+    height: 35vw;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+" id="intro" loop="true">
+          <source src="images/Out3.mp4">
+        </video>
+      </div>
+      <div style="    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 24px;">
+        <h1>sponsors</h1>
+        <img id="dates" class="" src="images/sponsor.png" alt="" style="width: 60vw;margin-bottom: 24px;margin-top:0px">
+      </div>
 
 
       <!-- Title sponsor
@@ -132,55 +172,29 @@ Powered by
 Trilok events
  -->
 
-      <div class="aboutText">
-        <h1>Title Sponsor</h1>
-        <img src="images/WEDLAND.png" class="imgSponsor" style="box-shadow: 0px 0px 15px 1px #ed027e;margin: 12px;">
-        <h2>Co-sponsors</h2>
-        <div class="canvasContainer">
-          <div class="imgCanvas" style="box-shadow: 0px 0px 16px 0px white;"><img src="images/codesvera.png"
-              style="height:100%"></div>
-          <div class="imgCanvas" style="box-shadow: 0px 0px 16px 0px white;"><img src="images/Leading Mindz .png"
-              style="height:100%"></div>
-        </div>
-        <h2>Other Sponsors (Bronze Level) </h2>
-        <div class="canvasContainer">
 
-          <div class="imgCanvas" style="box-shadow: 0px 0px 16px 0px white;"><img src="images/SS Pooja(B) .png"
-              style="height:100%"></div>
-          <!-- <div class="imgCanvas" style="box-shadow: 0px 0px 16px 0px white;"><img src="images/Leading Mindz .png"
-              style="height:100%"></div> -->
-          <!-- <h3>Pace Tution Centre</h3>
-          <h3>Moto Avenue</h3>
-          <h3>Arabian Jewellery</h3> -->
-        </div>
-        <h2>Powered by</h2>
-        <div class="canvasContainer">
-          <div class="imgCanvas" style="box-shadow: 0px 0px 16px 0px white;"><img src="images/TR.png"
-              style="height:100%"></div>
+
+      <footer class="footer">
+        <p class="text-center" style="margin-top: 24px;"> DAKSHA YANTHRA</p>
+        <div class="social">
+
+          <a href="https://instagram.com/dakshayanthra" aria-label="our instagram page"><i
+              class="fab fa-instagram"></i></a>
+
+          <a href="contacts.html" aria-label="email us"><i class="fab fa-at"></i></a>
 
         </div>
 
-      </div>
 
+
+        <p class="copyright">
+          <span style="font-family:  sans-serif;">© 2023 Daksha Yanthra, All Rights Reserved. | Trivandrum, Kerala,
+            India.</span>
+        </p>
+      </footer>
     </main>
   </section>
-  <footer class="footer">
-    <p class="text-center" style="margin-top: 24px;"> DAKSHA YANTHRA</p>
-    <div class="social">
 
-      <a href="https://instagram.com/dakshayanthra" aria-label="our instagram page"><i class="fab fa-instagram"></i></a>
-
-      <a href="contacts.html" aria-label="email us"><i class="fab fa-at"></i></a>
-
-    </div>
-
-
-
-    <p class="copyright">
-      <span style="font-family:  sans-serif;">© 2023 Daksha Yanthra, All Rights Reserved. | Trivandrum, Kerala,
-        India.</span>
-    </p>
-  </footer>
 
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
@@ -206,6 +220,8 @@ Trilok events
       await sleep(5000);
       document.getElementById("curtain1").style.display = "none";
       document.getElementById("curtain2").style.display = "none";
+      document.getElementById("intro").scrollIntoView()
+      document.getElementById("intro").play()
 
     }
     async function logo_anim() {
@@ -231,14 +247,14 @@ Trilok events
   </script>
 
   <script>
-    setInterval(function () {
-      document.getElementById("lights").src ="images/Lightson4.webp";
-      $(this).find("#lignhts").fadeOut(1000);
-    }, 1000);
-    setInterval(function () {
-      document.getElementById("lights").src ="images/LightsOff.webp";
-      $(this).find("#lignhts").fadeOut(1000);
-    }, 2000);
+    // setInterval(function () {
+    //   document.getElementById("lights").src = "images/Lightson4.webp";
+    //   $(this).find("#lignhts").fadeOut(1000);
+    // }, 1000);
+    // setInterval(function () {
+    //   document.getElementById("lights").src = "images/LightsOff.webp";
+    //   $(this).find("#lignhts").fadeOut(1000);
+    // }, 2000);
 
   </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

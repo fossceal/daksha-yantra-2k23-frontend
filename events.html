@@ -36,7 +36,7 @@
             <img src="images/Logo.webp" alt="" width="30" height="30">
           </a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        <button class="navbar-toggler" type="button" data-bs-toggle=" " data-bs-target="#navbarScroll"
           aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -67,7 +67,7 @@
   </header>
   <section>
 
-    <main id="mainbackground">
+    <main id="mainbackground" style="padding-top: 10vh;">
 
 
 
@@ -85,29 +85,30 @@
       </div>
       <div id="banner2" class="banner1">Sponsors</div>
 
-      <img id="sday" class="clooney" src="images/Banner 1.webp" alt="">
 
+      <footer class="footer">
+        <p class="text-center" style="margin-top: 24px;"> DAKSHA YANTHRA</p>
+        <div class="social">
+
+          <a href="https://instagram.com/dakshayanthra" aria-label="our instagram page"><i
+              class="fab fa-instagram"></i></a>
+
+          <a href="contacts.html" aria-label="email us"><i class="fab fa-at"></i></a>
+
+        </div>
+
+
+
+        <p class="copyright">
+          <span style="font-family:  sans-serif;">© 2023 Daksha Yanthra, All Rights Reserved. | Trivandrum, Kerala,
+            India.</span>
+        </p>
+      </footer>
 
     </main>
   </section>
 
-  <footer class="footer">
-    <p class="text-center" style="margin-top: 24px;"> DAKSHA YANTHRA</p>
-    <div class="social">
 
-      <a href="https://instagram.com/dakshayanthra" aria-label="our instagram page"><i class="fab fa-instagram"></i></a>
-
-      <a href="contacts.html" aria-label="email us"><i class="fab fa-at"></i></a>
-
-    </div>
-
-
-
-    <p class="copyright">
-      <span style="font-family:  sans-serif;">© 2023 Daksha Yanthra, All Rights Reserved. | Trivandrum, Kerala,
-        India.</span>
-    </p>
-  </footer>
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <script src="EventsHydrator.js"></script>
 
@@ -160,10 +161,7 @@
       banner2.animate(anim, interval);
       await sleep(interval);
       banner2.style.opacity = 1;
-      sday = document.getElementById("sday");
-      sday.animate(anim, interval);
-      await sleep(interval);
-      sday.style.opacity = 1;
+
 
     }
 
