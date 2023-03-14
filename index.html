@@ -125,7 +125,7 @@
         id="landinglogo"
         oncontextmenu="return false"
         draggable="false"
-        style="width: 47vh; height: 47vh; animation: SlideDown 5s forwards"
+        style="width: 40vh; height: 40vh; animation: SlideDown 2s forwards"
       ></div>
 
       <h2 id="landingname">DAKSHA YANTHRA</h2>
@@ -143,44 +143,52 @@
           <!-- </main> -->
         </div>
         <img class="showtime mt-4" src="images/showtime.webp" alt="" />
-        <h2 id="headingname">APRIL</h2>
-        <div class="dates">
-          <img id="dates" class="" src="images/wha.png" alt="" />
+        <!-- <h2 id="headingname">APRIL</h2> -->
+        <div class="dates" style="margin-bottom:6%">
+          <img id="dates" class="" src="images/date1.png" alt="" />
         </div>
         <!-- <img class="clgphoto mt-4" src="images/building.png" alt=""> -->
         <!-- <img class="banner1" src="images/banner1.webp" alt="" /> -->
 
-        <center style="display: inline;">
-          <!-- <img
-            id="lights"
-            src="images/OBJECTS.png"
-            alt=""
-            oncontextmenu="return false"
-            draggable="false"
-          /> -->
-          <div
-            style="
-              /* width: 854px; */
-              margin: 24px;
-              /* border-radius: 12px; */
-              overflow: hidden;
-              height: 30%;
-              /* box-shadow: 0px 0px 14px #ff0b00; */
-            "
-            onclick="playpause()"
-          >
-            <video
-              width="960"
-              height="540"
-              autoplay="true"
-              style="width: 100%;"
-              id="intro"
-              loop="true"
-            >
-              <source src="images/Out3.mp4" />
+        <div style="    /* background-color: rgb(0 0 0 / 67%); */
+        backdrop-filter: blur(0px);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        width: 64vw;
+        height: 36vw;
+    margin-bottom: 5vh;
+        z-index: 4;
+    " onclick="playpause()">
+            <!-- <img id="lights" src="images/445.png" alt="" onclick="playpause()" oncontextmenu="return false"
+              draggable="false" style="    width: 90vw;
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -16%);
+    "> -->
+            <img id="lights" src="images/frame.png" alt="" oncontextmenu="return false" draggable="false" style="  
+                  width: 103%;
+        height: 104%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-49%, -41%); ">
+            <video style="    width: 63vw;
+        height: 35vw;
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    " id="intro" loop="true">
+              <source src="images/Out3.mp4">
             </video>
           </div>
-        </center>
 
         <!-- Title sponsor
 Wedland
@@ -200,7 +208,7 @@ Trilok events
  -->
 
         <div class="aboutText" style="margin-top:0">
-          <h1 style="font-size: 4vw;">Sponsors</h1>
+          <h1 style="font-size: 4vw; background: #8d1e1d; border-radius: 10px; padding: 4%;">Sponsors</h1>
           <img src="images/Group 3.png" style="width: 65vw; height: auto;"/>
           </div>
         </div>

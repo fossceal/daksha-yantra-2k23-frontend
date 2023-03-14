@@ -34,18 +34,18 @@ header {
   top: 0%;
 }
 #showcase {
-  background-image: url("images/front.webp");
+  background-image: url("images/bgfront3.png");
   background-size: cover;
   background-blend-mode: screen;
   background-position: center;
   height: 100vh;
   width: 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   overflow-x: hidden;
-  position: relative;
 }
 
 #landinglogo {
@@ -64,9 +64,9 @@ header {
 
 #logCover {
   /* width: 100vw; */
-  margin-top: 10vh;
   width: 76vw;
   /* height: 47vh; */
+  margin-top: 10vh;
   padding: 5%;
   animation: slidedown 700ms forwards;
   display: flex;
@@ -110,17 +110,18 @@ header {
 #landingname {
   margin-top: 5%;
   font-size: 5.8vw;
-  animation: SlideDown 5s;
+  animation: SlideDown 2s;
 }
 #banner {
-  background-image: url("images/sun-burst.jpg");
+  background-image: url("images/come\ and\ enjoy.webp");
   background-size: cover;
   background-position: center;
-  border-top: 4px solid #000000;
-  border-bottom: 4px solid #000000;
+  border-width: 4px 0px 4px 0px;
+  border: solid black;
+
   width: 100%;
-  height: auto;
-  padding: 1%;
+  height: 70%;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,22 +131,19 @@ header {
   font-size: 3.5vw;
   width: 100%;
   text-align: center;
-  /* backdrop-filter: blur(10px); */
 }
-/* .backdrop {
-} */
 #mainbackground {
-  background-image: url("images/front.webp");
+  background-image: url("images/bgfront3.png");
   background-size: cover;
   background-position: top;
-  background-attachment: fixed;
   height: 100%;
   width: 100%;
-  padding: 0;
+  background-attachment: scroll;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0px;
 }
 
 .showtime {
@@ -155,8 +153,8 @@ header {
   font-size: 7vw;
 }
 #dates {
-  margin-top: 2%;
-  width: 100vw;
+  margin-top: 5%;
+  width: 25vw;
   height: auto;
 }
 .clgphoto {
@@ -178,31 +176,22 @@ header {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  height: 15vh;
 }
 .banner1 {
   width: 100%;
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
   position: relative;
-  margin-top: 0%;
+  margin-top: 5%;
   /* background: url("images/banner2.webp"); */
   background-size: cover;
   background-position: center;
   opacity: 0;
 }
 #lights {
-  width: 60vw;
+  width: 80vw;
   height: auto;
   margin-top: -10%;
-}
-
-/* video {
-  width: 50%;
-} */
-
-footer {
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .clooney {
@@ -263,17 +252,14 @@ footer {
 
 .footer {
   width: 100%;
-  background: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  /* opacity: 100%; */
-  /* border-top-left-radius: 10%; */
-  /* border-top-right-radius: 10%; */
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
   /* position: absolute; */
   /* bottom: 0px; */
 }
 main {
-  /* height: 100vh; */
-  padding: 10vh 12px 12px 12px;
+  height: 100vh;
+  /* padding: 10vh 12px 12px 12px; */
   background: url("images/background.webp");
   background-size: cover;
   background-position: top;
@@ -410,24 +396,17 @@ main {
   margin: 3px;
 }
 .aboutText {
-  /* background-image: url("images/Banner\ 1.webp"); */
-  /* background-size: cover; */
-  /* background-position: center; */
   padding: 4%;
-  padding-top: 2%;
   font-size: 32px;
   /* background: #8d1e1d; */
   /* backdrop-filter: blur(10px); */
-  margin-top: 0%;
-  color: black;
+  /* margin-bottom: 10%; */
+  color: #ffc425;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
-  /* height: 20%; */
-  width: 50vw;
-  height: auto;
 }
 .imgSponsor {
   width: 40vw;
