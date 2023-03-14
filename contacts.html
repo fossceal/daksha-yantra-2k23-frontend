@@ -65,6 +65,7 @@
             aria-controls="navbarScroll"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onclick="navToggle()"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -126,6 +127,7 @@
     </div> -->
     </header>
     <main style="padding: 0; min-height: 100vh">
+      <div style="width: 100vw;"></div>
       <h1 style="margin-top: 10%;">Contact us</h1>
       <div style="width:100vw; height: 5vh;"></div>
       <div class="eventsContainer" id="eventsContainer">
@@ -242,6 +244,20 @@
         }
       }
       clooney();
+
+
+      var toggle=false;
+
+      function navToggle(){
+        if(!toggle){
+          document.getElementById('navbarScroll').style.display='block';
+          toggle=true
+      }
+    else if(toggle){
+        document.getElementById('navbarScroll').style.display='none';
+        toggle=false
+      }
+    }
     </script>
   </body>
 </html>
