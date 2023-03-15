@@ -1,3 +1,21 @@
+:root {
+  --outer-shadow:
+    0 0 0.1vw 0.4vw #e0f7fa,
+    0 0 0.4vw 0.6vw #00e5ff,
+    0 0 1vw 0.4vw #26c6da;
+  --inner-shadow:
+    inset 0 0 0.1vw 0.4vw #e0f7fa,
+    inset 0 0 0.4vw 0.6vw #00e5ff,
+    inset 0 0 1vw 0.4vw #26c6da;
+  --all-shadow:
+    0 0 0.1vw 0.4vw #e0f7fa,
+    0 0 0.4vw 0.6vw #00e5ff,
+    0 0 1vw 0.4vw #26c6da,
+    inset 0 0 0.1vw 0.4vw #e0f7fa,
+    inset 0 0 0.4vw 0.6vw #00e5ff,
+    inset 0 0 1vw 0.4vw #26c6da;
+}
+
 @font-face {
   font-family: NewAgeVintage;
   src: url("fonts/NewAgeVintage/NewAgeVintageRegular.otf") format("opentype");
@@ -98,6 +116,7 @@ body {
   position: absolute;
   margin-left: 10%;
   border-radius: 4vw;
+  box-shadow: var(--outer-shadow);
 }
 
 .sponsored {
