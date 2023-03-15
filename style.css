@@ -1,19 +1,11 @@
 :root {
-  --outer-shadow:
-    0 0 0.1vw 0.4vw #e0f7fa,
-    0 0 0.4vw 0.6vw #00e5ff,
+  --outer-shadow: 0 0 0.1vw 0.4vw #e0f7fa, 0 0 0.4vw 0.6vw #00e5ff,
     0 0 1vw 0.4vw #26c6da;
-  --inner-shadow:
-    inset 0 0 0.1vw 0.4vw #e0f7fa,
-    inset 0 0 0.4vw 0.6vw #00e5ff,
+  --inner-shadow: inset 0 0 0.1vw 0.4vw #e0f7fa, inset 0 0 0.4vw 0.6vw #00e5ff,
     inset 0 0 1vw 0.4vw #26c6da;
-  --all-shadow:
-    0 0 0.1vw 0.4vw #e0f7fa,
-    0 0 0.4vw 0.6vw #00e5ff,
-    0 0 1vw 0.4vw #26c6da,
-    inset 0 0 0.1vw 0.4vw #e0f7fa,
-    inset 0 0 0.4vw 0.6vw #00e5ff,
-    inset 0 0 1vw 0.4vw #26c6da;
+  --all-shadow: 0 0 0.1vw 0.4vw #e0f7fa, 0 0 0.4vw 0.6vw #00e5ff,
+    0 0 1vw 0.4vw #26c6da, inset 0 0 0.1vw 0.4vw #e0f7fa,
+    inset 0 0 0.4vw 0.6vw #00e5ff, inset 0 0 1vw 0.4vw #26c6da;
 }
 
 @font-face {
@@ -40,7 +32,6 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-
 }
 
 body {
@@ -56,8 +47,6 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
-
-
 
 /* .main-wrapper {
   height: 100%;
@@ -136,7 +125,7 @@ body {
 
 .sponsors {
   /* position: absolute; */
-  margin-top: 230%;
+  margin-top: -30%;
   width: 70%;
   margin-left: 12%;
 }
