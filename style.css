@@ -1,21 +1,3 @@
-:root {
-  --outer-shadow:
-    0 0 0.1vw 0.4vw #e0f7fa,
-    0 0 0.4vw 0.6vw #00e5ff,
-    0 0 1vw 0.4vw #26c6da;
-  --inner-shadow:
-    inset 0 0 0.1vw 0.4vw #e0f7fa,
-    inset 0 0 0.4vw 0.6vw #00e5ff,
-    inset 0 0 1vw 0.4vw #26c6da;
-  --all-shadow:
-    0 0 0.1vw 0.4vw #e0f7fa,
-    0 0 0.4vw 0.6vw #00e5ff,
-    0 0 1vw 0.4vw #26c6da,
-    inset 0 0 0.1vw 0.4vw #e0f7fa,
-    inset 0 0 0.4vw 0.6vw #00e5ff,
-    inset 0 0 1vw 0.4vw #26c6da;
-}
-
 @font-face {
   font-family: NewAgeVintage;
   src: url("fonts/NewAgeVintage/NewAgeVintageRegular.otf") format("opentype");
@@ -116,7 +98,6 @@ body {
   position: absolute;
   margin-left: 10%;
   border-radius: 4vw;
-  box-shadow: var(--outer-shadow);
 }
 
 .sponsored {
@@ -143,8 +124,73 @@ body {
 
 footer {
   position: absolute;
-  margin-top: 200%;
+  margin-top: 250%;
   background: blur(rgba(255, 255, 255, 0.8));
   width: 100%;
   height: 20%;
+}
+
+.dy {
+  position: absolute;
+  margin-left: 37%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.dylist li {
+  font-size: 3em;
+  color: aliceblue;
+}
+
+.dylist li:nth-child(1) {
+  color: darksalmon;
+}
+
+.dylist li:nth-child(2) {
+  color: cornflowerblue;
+}
+
+.dylist li:nth-child(3) {
+  color: bisque;
+}
+
+.dylist li:nth-child(4) {
+  color: darkturquoise;
+}
+
+.dylist li:nth-child(5) {
+  color: crimson;
+}
+
+.dylist li:nth-child(6) {
+  color: bisque;
+}
+
+.dylist li:nth-child(8) {
+  color: beige;
+}
+
+.dylist li:nth-child(9) {
+  color: darksalmon;
+}
+
+.dylist li:nth-child(10) {
+  color: aqua;
+}
+.dylist li:nth-child(11) {
+  color: lightcoral;
+}
+.dylist li:nth-child(12) {
+  color: bisque;
+}
+.dylist li:nth-child(13) {
+  color: darkcyan;
+}
+.dylist li:nth-child(14) {
+  color: bisque;
 }
