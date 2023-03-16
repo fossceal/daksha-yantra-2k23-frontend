@@ -105,7 +105,6 @@ body {
   align-items: center;
   margin-top: 40px;
   flex-wrap: wrap;
-
 }
 
 .contact-us {
@@ -188,38 +187,51 @@ body {
   }
 
   .contact-us {
-    padding-top: 8%;
+    padding-top: 15%;
     margin-left: 3%;
     padding-left: 5%;
+    font-size: 6vw;
   }
 
   .contact-daksha {
     font-size: 3vw;
-    margin-left: 18%;
+    margin-left: 5%;
   }
 
   .contact-daksha div {
-    padding-left: 5%;
+    padding-left: 2%;
+  }
+
+  .contact-daksha h2 {
+    font-size: 5vw;
   }
 
   .contact-yanthra {
     font-size: 3vw;
-    margin-left: 18%;
-    margin-top: 30%;
+    margin-left: 5%;
+    margin-top: 10%;
   }
 
   .contact-yanthra div {
-    padding-left: 5%;
+    padding-left: 2%;
+  }
+
+  .contact-yanthra h2 {
+    font-size: 5vw;
   }
 
   .fa-instagram {
-    scale: 1.5;
-    margin-top: 30%;
+    scale: 0.8;
+    margin-top: 2%;
     margin-left: 32%;
   }
 
+  .icons {
+    margin-top: 10%;
+  }
+
   .fa-facebook {
-    scale: 1.5;
+    scale: 0.8;
   }
 
   .close {
