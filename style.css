@@ -46,7 +46,7 @@ body {
 body {
   font-family: "NewAgeVintage";
   scrollbar-color: var(--text) rgb(71, 71, 71);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background: url(./images/Bgblack.png);
   background-size: cover;
   background-position: center;
@@ -74,7 +74,7 @@ body {
 .navbar__ {
   position: fixed;
   top: 0;
-  z-index: 24;
+  z-index: 99;
   width: 100%;
   backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.233);
