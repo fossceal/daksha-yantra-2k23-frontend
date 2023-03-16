@@ -379,6 +379,8 @@ main a {
     height: 100vh;
     position: relative;
     box-shadow: var(--outer-shadow);
+    border-radius: 30px;
+    overflow: hidden;
     /* -webkit-mask-image: linear-gradient(to top, transparent 1%, black 25%); */
     /* -webkit-mask-image: linear-gradient(to bottom, transparent 1%, black 5%); */
 }
