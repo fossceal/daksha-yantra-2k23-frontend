@@ -686,7 +686,7 @@ main a {
 }
 
 .untitled__slide:nth-child(1) .untitled__slideBg {
-    background-image: url(https://unsplash.it/g/1500/2200?image=838);
+    background-image: url(photos/posters/proshow.jpeg);
 }
 
 .untitled__slide:nth-child(2) {
@@ -695,7 +695,7 @@ main a {
 }
 
 .untitled__slide:nth-child(2) .untitled__slideBg {
-    background-image: url(https://unsplash.it/g/1500/1000?image=1078);
+    background-image: url(photos/posters/proshow.jpeg);
 }
 
 .untitled__slide:nth-child(3) {
@@ -704,7 +704,7 @@ main a {
 }
 
 .untitled__slide:nth-child(3) .untitled__slideBg {
-    background-image: url(https://unsplash.it/g/1500/1000?image=1077);
+    background-image: url(photos/posters/proshow.jpeg);
 }
 
 .untitled__slide:nth-child(4) {
@@ -713,7 +713,7 @@ main a {
 }
 
 .untitled__slide:nth-child(4) .untitled__slideBg {
-    background-image: url(https://unsplash.it/g/1500/1200?image=345);
+    background-image: url(photos/posters/proshow.jpeg);
 }
 
 .untitled__slideBg {
@@ -730,6 +730,10 @@ main a {
     z-index: -1;
     -webkit-animation: bgInOut 5s infinite;
     animation: bgInOut 5s infinite;
+}
+
+.untitled__slideContent span {
+  font-family: NiagraSolid;
 }
 
 @-webkit-keyframes bgInOut {
