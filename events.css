@@ -34,6 +34,10 @@ body {
     background-color: rgba(0, 0, 0, 0.233);
 }
 
+.navbar {
+    background-color: rgba(0, 0, 0, 0.233);
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -49,7 +53,7 @@ section {
     display: flex;
     flex-flow: wrap;
     font-size: 0;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
 }
 
 section time {

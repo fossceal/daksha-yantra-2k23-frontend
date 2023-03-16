@@ -60,6 +60,10 @@ body {
   background-color: rgba(0, 0, 0, 0.233);
 }
 
+.navbar {
+  background-color: rgba(0, 0, 0, 0.233);
+}
+
 .video-wrapper {
   height: 100%;
   width: 100%;
