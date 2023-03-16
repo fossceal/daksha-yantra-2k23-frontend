@@ -54,6 +54,19 @@
     </header>
 
     <main>
+        <div class="wrapper">
+            <div id="countdown-container" class="countdown-container">
+                <article id="js-countdown" class="countdown">
+                    <div id="js-days" class="number"></div>
+                    <div id="js-separator" class="separator">:</div>
+                    <div id="js-hours" class="number"></div>
+                    <div id="js-separator" class="separator">:</div>
+                    <div id="js-minutes" class="number"></div>
+                    <div id="js-separator" class="separator">:</div>
+                    <div id="js-seconds" class="number"></div>
+                </article>
+            </div>
+        </div>
         <section>
             <time datetime="2015-07-26" class="blank"><span class="caldate">26</span></time>
             <time datetime="2015-07-27" class="hidden">
@@ -180,6 +193,7 @@
             <time datetime="2015-08-31" class="blank"><span class="caldate">31</span></time>
             <time datetime="2015-09-01" class="blank"><span class="caldate">01</span></time>
         </section>
+        
     </main>
 
     <div class="main-wrapper">
@@ -211,6 +225,8 @@
         </div>
     </div>
     <!-- </div> -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    
     <script src="./events.js"></script>
 </body>
 
