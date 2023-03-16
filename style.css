@@ -295,16 +295,18 @@ ul {
   overflow: hidden;
   border: none;
 }
+
 .slideshow .slider .item .text {
   display: none;
 }
 .slideshow .slider .item img {
-  min-width: 101%;
-  min-height: 101%;
+  min-width: 100%;
+  min-height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 }
 .slideshow .slick-dots {
   position: fixed;
