@@ -292,10 +292,10 @@ body {
 }
 
 .sponsored {
-  /* position: absolute; */
-  margin-top: 0%;
-  width: 70%;
-  margin-left: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
 }
 
 .whole-sponsor {
@@ -303,12 +303,11 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  background: pink;
+  margin-top: -30%;
 }
 
 .sponsors {
   width: 70%;
-  background: red;
 }
 
 .sponsors-sign {
