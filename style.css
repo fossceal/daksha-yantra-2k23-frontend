@@ -35,6 +35,10 @@ body {
   background-attachment: scroll;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* .main-wrapper {
   height: 100%;
 } */

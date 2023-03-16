@@ -21,6 +21,10 @@ body {
     background-attachment: scroll;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .navbar__ {
     position: fixed;
     top: 0;
