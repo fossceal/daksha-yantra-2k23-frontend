@@ -65,6 +65,7 @@ body {
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+  /* -webkit-mask-image: linear-gradient(to top, transparent 1%, black 5%); */
 }
 
 .main-wrapper {
