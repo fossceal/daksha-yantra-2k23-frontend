@@ -24,13 +24,10 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
-<<<<<<< HEAD
 }
 
 ::-webkit-scrollbar {
   display: none;
-=======
->>>>>>> 8f7e8de91271eabb8c41a2091c2f0355559fd440
 }
 
 .navbar__ {
@@ -40,13 +37,10 @@ body {
   width: 100%;
   backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.233);
-<<<<<<< HEAD
 }
 
 .navbar {
   background-color: rgba(0, 0, 0, 0.233);
-=======
->>>>>>> 8f7e8de91271eabb8c41a2091c2f0355559fd440
 }
 
 /*MODAL*/
@@ -169,11 +163,7 @@ section {
   display: flex;
   flex-flow: wrap;
   font-size: 0;
-<<<<<<< HEAD
-  /* backdrop-filter: blur(10px); */
-=======
   backdrop-filter: blur(10px);
->>>>>>> 8f7e8de91271eabb8c41a2091c2f0355559fd440
 }
 
 section time {
