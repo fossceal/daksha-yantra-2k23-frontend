@@ -269,10 +269,10 @@ main a {
 .separator {
     display: block;
     color: white;
-    height: 10rem;
-    font-size: 12vw;
+    height: 10vw;
+    font-size: 12vh;
     position: relative;
-    line-height: 10rem;
+    line-height: 10vw;
     text-align: center;
     width: 100%;
 }
@@ -843,6 +843,7 @@ section {
   flex-flow: wrap;
   font-size: 0;
   backdrop-filter: blur(10px);
+  margin-bottom: 80px;
 }
 
 section time {
