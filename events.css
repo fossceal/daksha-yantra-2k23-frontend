@@ -148,6 +148,53 @@ body {
   }
 }
 
+@media (orientation: portrait) {
+  .modal-content {
+    margin-top: -130vw;
+    width: 80%;
+    height: 60vh;
+  }
+
+  .contact-us {
+    padding-top: 8%;
+    margin-left: 3%;
+    padding-left: 5%;
+  }
+
+  .contact-daksha {
+    font-size: 3vw;
+    margin-left: 18%;
+  }
+
+  .contact-daksha div {
+    padding-left: 5%;
+  }
+
+  .contact-yanthra {
+    font-size: 3vw;
+    margin-left: 18%;
+    margin-top: 30%;
+  }
+
+  .contact-yanthra div {
+    padding-left: 5%;
+  }
+
+  .fa-instagram {
+    scale: 1.5;
+    margin-top: 30%;
+    margin-left: 32%;
+  }
+
+  .fa-facebook {
+    scale: 1.5;
+  }
+
+  .close {
+    margin-left: 88%;
+  }
+}
+
 main {
   display: flex;
   flex-direction: column;
