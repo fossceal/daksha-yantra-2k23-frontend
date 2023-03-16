@@ -68,15 +68,20 @@ body {
 /*MODAL*/
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 999; /* Sit on top */
+  /* Stay in place */
+  z-index: 999;
+  /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+  text-transform: uppercase;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black background with opacity */
 }
 
 /* Modal Content/Box */
@@ -86,8 +91,7 @@ body {
   backdrop-filter: blur(10px);
   margin: -40% auto;
   /* padding: 10%; */
-  width: 50vw;
-  height: 30vw;
+  width: 100%;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   box-shadow: 0 0 10px #fff;
@@ -95,46 +99,50 @@ body {
   /* initial 0.5s 0.2s */
 }
 
-.content {
-  padding-left: 10%;
-  padding-top: 5%;
+.daksha-yantra {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+
 }
 
 .contact-us {
-  margin-left: 35%;
+  margin-top: 20px;
+  text-align: center;
+  /* margin-left: 35%; */
 }
 
 .contact-daksha {
   font-size: 1.5vw;
-  margin-top: 5%;
+  /* margin-top: 5%; */
   margin-left: 5%;
 }
 
 .contact-yanthra {
   font-size: 1.5vw;
-  margin-left: 65%;
-  margin-top: -21.5%;
+  /* margin-left: 65%; */
+  /* margin-top: -21.5%; */
 }
 
-.fa-instagram {
-  margin-top: 15%;
-  margin-left: 35%;
-  scale: 3;
-}
-
-.fa-facebook {
-  margin-left: 10%;
-  scale: 3;
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 40px;
+  margin: 40px;
 }
 
 /* Close Button */
 .close {
-  margin-top: 1%;
-  margin-left: 96%;
-  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: red;
   float: right;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 50px;
+  /* font-weight: bold; */
 }
 
 .close:hover,
@@ -151,6 +159,7 @@ body {
     box-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000,
       0 0 70px #0ba9ca, 0 0 80px #0ba9ca, 0 0 100px #0ba9ca, 0 0 150px #0ba9ca;
   }
+
   100% {
     border-color: rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 5px #000, 0 0 10px #0ba9ca, 0 0 15px #0ba9ca,
@@ -164,6 +173,7 @@ body {
     top: 0%;
     width: 5vw;
   }
+
   100% {
     top: 100%;
     width: 50vw;
