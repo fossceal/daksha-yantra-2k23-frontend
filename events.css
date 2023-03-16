@@ -56,14 +56,10 @@ body {
 /*MODAL*/
 /* The Modal (background) */
 .modal {
-   /* Stay in place */
   z-index: 999; /* Sit on top */
-  left: 0;
-  top: 0;
   text-transform: uppercase;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  width: 100vh; /* Full width */
+  height: 100vh; /* Full height */
   background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
 }
 
@@ -72,7 +68,6 @@ body {
   color: rgba(255, 255, 255, 0.7);
   background: rgba(0, 0, 0, 0.233);
   backdrop-filter: blur(10px);
-  margin: -40% auto;
   /* padding: 10%; */
   width: 100%;
   border: 2px solid rgba(0, 0, 0, 0.2);
@@ -1195,4 +1190,16 @@ ul {
     transform: translate(-50%, -50%) translateY(-5rem) scale(0.5)
       rotateX(-75deg);
   }
+}
+
+/* Events editis */
+
+.caldate {
+  font-family: NiagraSolid;
+  font-size: 40px;
+  color: white;
+}
+
+span .title {
+  text-transform: uppercase;
 }

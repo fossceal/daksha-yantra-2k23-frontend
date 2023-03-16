@@ -286,47 +286,52 @@ body {
   margin-left: 12%;
 }
 
+.whole-sponsor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: pink;
+}
+
 .sponsors {
-  /* position: absolute; */
-  margin-top: -30%;
   width: 70%;
-  margin-left: 12%;
+  background: red;
+}
+
+.sponsors-sign {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 30%;
+  height: 45%;
+  /* background: #000; */
 }
 
 .wedland {
-  width: 20%;
-  margin-left: 37%;
-  margin-top: -105%;
+  width: 40%;
 }
 
 .codesvera {
-  width: 13%;
-  margin-left: 33%;
-  margin-top: -93%;
+  width: 40%;
 }
 
 .learningmindz {
-  width: 13%;
-  margin-left: 1%;
-  margin-top: -93%;
+  width: 40%;
 }
 
 .pooja {
-  width: 6%;
-  margin-top: -70%;
-  margin-left: -21.5%;
+  width: 20%;
 }
 
 .arabian {
-  width: 8%;
-  margin-top: -70%;
-  margin-left: 2%;
+  width: 40%;
 }
 
 .pace {
-  width: 8%;
-  margin-top: -55%;
-  margin-left: -17%;
+  width: 40%;
 }
 
 footer {
@@ -569,6 +574,7 @@ ul {
 .the-most img {
   max-width: 100%;
 }
+
 
 /*Splash Screen*/
 
