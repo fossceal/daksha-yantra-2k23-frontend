@@ -33,6 +33,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
+  background-blend-mode: screen;
 }
 
 ::-webkit-scrollbar {
@@ -315,7 +316,6 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
 }
 .slideshow .slick-dots {
   position: fixed;
@@ -411,13 +411,14 @@ ul {
 
 .splash {
   height: 0px;
+  width: 100%;
   padding: 0px;
   border: 130em solid black;
   position: fixed;
   left: 50%;
   top: 100%;
   display: block;
-  /* z-index: 1; */
+  z-index: 11;
   box-sizing: initial;
   overflow: hidden;
   border-radius: 50%;
@@ -435,7 +436,7 @@ ul {
   top: 50%;
   overflow: hidden;
   opacity: 0;
-  /* z-index: 1; */
+  z-index: 11;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards,
@@ -468,6 +469,7 @@ ul {
     top: 50%;
     height: 100%;
     padding: 0px 100%;
+    z-index: -10;
   }
 }
 
@@ -520,6 +522,7 @@ ul {
     height: 64px;
     border-radius: 0px;
     top: 26px;
+    z-index: -10;
   }
 }
 
