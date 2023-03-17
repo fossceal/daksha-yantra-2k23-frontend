@@ -1,122 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://fonts.cdnfonts.com/css/new-age-vintage" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daksha Yanthra</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="style.css">
-    <title>homepage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="images/Logo.webp"
+      type="image/x-icon"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link
+      rel="icon"
+      href="images/Logo_.webp"
+      type="image/x-icon"
+      media="(prefers-color-scheme:light)"
+    />
+    <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    
-  <main id="showcase">
-
-    <div id="carousel">
-
-      <div class="hideLeft">
-       <img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
-     </div>
-
-     <div class="prevLeftSecond">
-       <img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
-     </div>
-
-     <div class="prev">
-       <img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
-     </div>
-
-     <div class="selected">
-       <img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
-     </div>
-
-     <div class="next">
-       <img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
-     </div>
-
-     <div class="nextRightSecond">
-       <img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
-     </div>
-
-     <div class="hideRight">
-       <img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
-     </div>
-
-   </div>
-
-   <div class="buttons">
-     <button id="prev">Prev</button>
-     <button id="next">Next</button>
-   </div>
-
-  </main>
-    <script>
-      function moveToSelected(element) {
-
-if (element == "next") {
-  var selected = $(".selected").next();
-} else if (element == "prev") {
-  var selected = $(".selected").prev();
-} else {
-  var selected = element;
-}
-
-var next = $(selected).next();
-var prev = $(selected).prev();
-var prevSecond = $(prev).prev();
-var nextSecond = $(next).next();
-
-$(selected).removeClass().addClass("selected");
-
-$(prev).removeClass().addClass("prev");
-$(next).removeClass().addClass("next");
-
-$(nextSecond).removeClass().addClass("nextRightSecond");
-$(prevSecond).removeClass().addClass("prevLeftSecond");
-
-$(nextSecond).nextAll().removeClass().addClass('hideRight');
-$(prevSecond).prevAll().removeClass().addClass('hideLeft');
-
-}
-
-// Eventos teclado
-$(document).keydown(function(e) {
-  switch(e.which) {
-      case 37: // left
-      moveToSelected('prev');
-      break;
-
-      case 39: // right
-      moveToSelected('next');
-      break;
-
-      default: return;
-  }
-  e.preventDefault();
-});
-
-$('#carousel div').click(function() {
-moveToSelected($(this));
-});
-
-$('#prev').click(function() {
-moveToSelected('prev');
-});
-
-$('#next').click(function() {
-moveToSelected('next');
-});
-
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark navbar__">
+        <div class="container-fluid" style="justify-content: space-between">
+          <div class="jnontainer">
+            <a class="navbar-brand" href="#" aria-label="go to homepage">
+              <img src="images/Logo.webp" alt="" width="30" height="30" />
+            </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav my-2 my-lg-0">
+              <li class="nav-item me-4">
+                <a class="nav-link" aria-current="page" href="/" aria-label="go to homepage">HOME</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="events.html" aria-label="go to events page">EVENTS</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" href="photos.html" aria-label="go to photos page">PHOTOS</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="about.html" aria-label="go to about page">ABOUT</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="contacts.html" aria-label="go to contact page">CONTACTS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="split-slideshow">
+      <div class="slideshow">
+        <div class="slider">
+          <div class="item">
+            <img src="./photos/2.JPG" />
+          </div>
+          <div class="item">
+            <img src="./photos/3.JPG" />
+          </div>
+          <div class="item">
+            <img src="./photos/1.JPG" />
+          </div>
+          <div class="item">
+            <img
+              src="https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-1.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- <div class="slideshow-text">
+        <div class="item">Canyon</div>
+        <div class="item">Desert</div>
+        <div class="item">Erosion</div>
+        <div class="item">Shape</div>
+      </div> -->
+    </div>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -1,305 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Official website for the The flagship techno-cultural event Dhaksha Yantra 2023 of College of Engineering, Attingal"
-    />
-
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- <link href="https://fonts.cdnfonts.com/css/new-age-vintage" rel="stylesheet"> -->
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daksha Yanthra</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-
-    <link
-      rel="icon"
-      href="images/Logo.webp"
-      type="image/x-icon"
-      media="(prefers-color-scheme: dark)"
-    />
-    <link
-      rel="icon"
-      href="images/Logo_.webp"
-      type="image/x-icon"
-      media="(prefers-color-scheme:light)"
-    />
-    <title>homepage</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="icon" href="images/Logo.webp" type="image/x-icon" media="(prefers-color-scheme: dark)"/>
+    <link rel="icon" href="images/Logo_.webp" type="image/x-icon" media="(prefers-color-scheme:light)"/>
+    <link href="./style.css" rel="stylesheet" />
   </head>
-
   <body>
+    <span id="splash-overlay" class="splash"></span>
+  <span id="welcome" class="z-depth-4"></span>
+    <!-- <div class="main-wrapper"> -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark navbar__">
-        <div class="container-fluid" style="justify-content: space-between">
-          <div class="jnontainer">
-            <a class="navbar-brand" href="#" aria-label="go to homepage">
-              <img src="images/Logo.webp" alt="" width="30" height="30" />
-            </a>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul
-              class="navbar-nav my-2 my-lg-0 navbar-nav-scroll"
-              style="--bs-scroll-height: 160px"
+        <nav class="navbar navbar-expand-lg navbar-dark navbar__">
+          <div class="container-fluid" style="justify-content: space-between">
+            <div class="jnontainer">
+              <a class="navbar-brand" href="#" aria-label="go to homepage">
+                <img src="images/Logo.webp" alt="" width="30" height="30" />
+              </a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              <li class="nav-item me-4">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/"
-                  aria-label="go to homepage"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item me-4">
-                <a
-                  class="nav-link"
-                  href="events.html"
-                  aria-label="go to events page"
-                  >Events</a
-                >
-              </li>
-              <!-- <li class="nav-item me-4">
-              <a class="nav-link" href="photos.html" aria-label="go to album page">Photos</a>
-            </li> -->
-              <li class="nav-item me-4">
-                <a
-                  class="nav-link"
-                  href="about.html"
-                  aria-label="go to about page"
-                  >About</a
-                >
-              </li>
-              <li class="nav-item me-4">
-                <a
-                  class="nav-link"
-                  href="contacts.html"
-                  aria-label="go to contact page"
-                  >Contact</a
-                >
-              </li>
-            </ul>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="nav navbar-nav navbar-right" style="max-height: 200px;">
+                <li class="nav-item me-4">
+                  <a class="nav-link active" aria-current="page" href="/" aria-label="go to homepage">HOME</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link" href="events.html" aria-label="go to events page">EVENTS</a>
+                </li>
+                <!-- <li class="nav-item me-4">
+                  <a class="nav-link" href="photos.html" aria-label="go to photos page">PHOTOS</a>
+                </li> -->
+                <li class="nav-item me-4">
+                  <a class="nav-link" href="about.html" aria-label="go to about page">ABOUT</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link" href="#" aria-label="open contact modal" id="myBtn">CONTACTS</a>
+                  <!-- <button class="modal-button">CONTACTS</button> -->
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-
-      <!-- 
-    <div class="covertext">
-      <div class="col-lg-10" style="float:none; margin:0 auto;">
-        <h1 class="title"></h1>
-        <h3 class="subtitle"></h3>
+        </nav>
+      </header>
+    <div class="hero">
+      <div class="video-wrapper">
+        <video autoplay loop muted plays-inline>
+          <source src="./video/Hero.mp4" type="video/mp4" />
+        </video>
       </div>
-      <div class="col-xs-12 explore">
-        <a href="#"></a>
+    </div>
+    <div class="main-wrapper">
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content modal-dialoge">
+          <span class="close">&times;</span>
+          <div class="content">
+            <div>
+              <h2 class="contact-us">Contact Us</h2>
+            </div>
+            <div class="daksha-yantra">
+              <div class="contact-daksha">
+                <h2>Daksha</h2>
+                <div>
+                  <a href="mailto: daksha@ceattingal.ac.in">mail&nbsp;<i class="fa-regular fa-envelope"></i></a>
+                </div>
+                <div>
+                  <a href="https://wa.me/918848964198">Convenor&nbsp;<i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div>
+                  <a href="https://wa.me/919746246588">Coordinator&nbsp;<i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+              </div>
+              <div class="contact-yanthra">
+                <h2>Yanthra</h2>
+                <div>
+                  <a href="mailto: yanthra@ceattingal.ac.in">mail&nbsp;<i class="fa-regular fa-envelope"></i></a>
+                </div>
+                <div>
+                  <a href="https://wa.me/918921413767">Convenor&nbsp;<i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div>
+                  <a href="https://wa.me/918138006250">Coordinator&nbsp;<i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="icons">
+              <a href="https://instagram.com/dakshayanthra"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/ceadakshayanthra"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div> -->
-    </header>
-    <main id="showcase">
-      <div
-        id="landinglogo"
-        oncontextmenu="return false"
-        draggable="false"
-        style="width: 40vh; height: 40vh; animation: SlideDown 2s forwards"
-      ></div>
-
-      <h2 id="landingname">DAKSHA YANTHRA</h2>
-      <img id="curtain1" src="images/One side curatin 1.webp" alt="" />
-      <img id="curtain2" src="images/One side curatin 2.webp" alt="" />
-    </main>
-    <section>
-      
-    </section>
-    <section>
-      <main id="mainbackground">
-        <div class="backdrop" style="border-top: 4px solid black;width:100%; background: linear-gradient(rgba(161, 4, 4, 0.8),rgba(194, 125, 125, 0.8));">
-          <!-- <main id="banner"> -->
-            <h3 class="bannerfont m-4">COME AND ENJOY WITH US</h3>
-          <!-- </main> -->
+      <img class="confetti" src="./images/confetti.png" />
+      <img class="showtime" src="./images/showtime.png" />
+      <img class="date" src="./images/date.png" />
+      <video class="promo" id="promovid" loop autoplay muted onclick="togglePlay()">
+              <source src="video/Out.mp4">
+      </video>
+      <div class="sponsored">
+        <img width="100%" src="./images/sponsorednobg.png" />
+      </div>
+      <div class="whole-sponsor">
+        <img class="sponsors" src="./images/sign.png" />
+        <div class="sponsors-sign">
+          <img class="wedland" src="./images/wedland.png" />
+          <img class="codesvera" src="./images/codesvera.png" />
+          <img class="learningmindz" src="./images/learningmindz.png" />
+          <img class="pooja" src="./images/pooja.png" />
+          <img class="arabian" src="./images/arabian2.png" />
+          <img class="pace" src="./images/pace.png" />
         </div>
-        <img class="showtime mt-4" src="images/showtime.webp" alt="" />
-        <!-- <h2 id="headingname">APRIL</h2> -->
-        <div class="dates" style="margin-bottom:6%">
-          <img id="dates" class="" src="images/date1.png" alt="" />
+      </div>
+      <footer>
+        <div class="footer-wrapper">
+        <div class="dy">
+        <ul class="dylist">
+            <li>D</li>
+            <li>A</li>
+            <li>K</li>
+            <li>S</li>
+            <li>H</li>
+            <li>A</li>
+            <li>&nbsp;</li>
+            <li>Y</li>
+            <li>A</li>
+            <li>N</li>
+            <li>T</li>
+            <li>H</li>
+            <li>R</li>
+            <li>A</li>
+        </ul>
         </div>
-        <!-- <img class="clgphoto mt-4" src="images/building.png" alt=""> -->
-        <!-- <img class="banner1" src="images/banner1.webp" alt="" /> -->
-
-        <div style="    /* background-color: rgb(0 0 0 / 67%); */
-        backdrop-filter: blur(0px);
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        width: 64vw;
-        height: 36vw;
-    margin-bottom: 5vh;
-        z-index: 4;
-    " onclick="playpause()">
-            <!-- <img id="lights" src="images/445.png" alt="" onclick="playpause()" oncontextmenu="return false"
-              draggable="false" style="    width: 90vw;
-        z-index: 1;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -16%);
-    "> -->
-            <img id="lights" src="images/frame.png" alt="" oncontextmenu="return false" draggable="false" style="  
-                  width: 103%;
-        height: 104%;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-49%, -41%); ">
-            <video style="    width: 63vw;
-        height: 35vw;
-        z-index: -1;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    " id="intro" loop="true">
-              <source src="images/Out3.mp4">
-            </video>
-          </div>
-
-        <!-- Title sponsor
-Wedland
-
-Co-sponsors
-Leading Mindz
-Codesvera
-
-Other sponsors (Bronze level) 
-S. S Pooja Convention Center
-Pace Tuition Centre
-Moto Avenue
-Arabian Jewellery
-
-Powered by
-Trilok events
- -->
-
-        <div class="aboutText" style="margin-top:0">
-          <h1 style="font-size: 4vw; background: #8d1e1d; border-radius: 10px; padding: 4%;">Sponsors</h1>
-          <img src="images/Group 3.png" style="width: 65vw; height: auto;"/>
-          </div>
+        <div class="powered">Powered by</div>
+        <img class="trilok" src="./images/tr.png" />
         </div>
-        <footer class="footer"">
-          <p class="text-center" style="margin-top: 24px">DAKSHA YANTHRA</p>
-          <div
-            class="social"
-            style="margin-top: 24px;"
-          >
-            <a
-              href="https://instagram.com/dakshayanthra"
-              aria-label="our instagram page"
-              ><i class="fab fa-instagram"></i
-            ></a>
-
-            <a href="contacts.html" aria-label="email us"
-              ><i class="fab fa-at"></i
-            ></a>
-          </div>
-
-          <p class="copyright">
-            <span style="font-family: sans-serif"
-              >© 2023 Daksha Yanthra, All Rights Reserved. | Trivandrum, Kerala,
-              India.</span
-            >
-          </p>
-        </footer>
-      </main>
-    </section>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-
+    </footer>
+    </div>
+    </div>
+    <!-- </div> -->
     <script>
-      // to scroll to the top on reload
-      $(document).ready(function () {
-        $(this).scrollTop(0);
-      });
-      //
+      var modal = document.getElementById("myModal");
 
-      function img_set(name, url) {
-        var r = document.querySelector(":root");
-        r.style.setProperty("--" + name, "url('" + url + "')");
-      }
-      function sleep(ms) {
-        return new Promise((resolve) => setTimeout(resolve, ms));
-      }
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
 
-      // fixes large screen bug
-      onload = async function () {
-        await sleep(5000);
-        document.getElementById("curtain1").style.display = "none";
-        document.getElementById("curtain2").style.display = "none";
-      };
-      async function logo_anim() {
-        var interval = 1500;
-        img_set("landing_logo", "images/Vector 1.webp");
-        await sleep(interval);
-        img_set("landing_logo", "images/Changes=Vector 4.webp");
-        await sleep(interval);
-        img_set("landing_logo", "images/Vector 6.webp");
-        await sleep(interval);
-      }
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-      setInterval(logo_anim, 4500);
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
 
-      function playpause() {
-        var myVideo = document.getElementById("intro");
-        if (myVideo.paused) myVideo.play();
-        else myVideo.pause();
-      }
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
     </script>
-
-    <!-- <script>
-      setInterval(function () {
-        document.getElementById("lights").src = "images/Lightson4.webp";
-        $(this).find("#lignhts").fadeOut(1000);
-      }, 1000);
-      setInterval(function () {
-        document.getElementById("lights").src = "images/LightsOff.webp";
-        $(this).find("#lignhts").fadeOut(1000);
-      }, 2000);
-    </script> -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
