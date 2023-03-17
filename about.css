@@ -394,11 +394,13 @@ ul {
 
 .about-content {
   position: absolute;
-  font-size: 2vw;
+  text-align: center;
+  font-size: 5vw;
   color: white;
   margin-top: 35%;
-  margin-left: 25%;
-  width: 50%;
+  margin-left: 10%;
+  width: 80%;
+  margin-bottom: 0;
 }
 
 .dybottom2 {

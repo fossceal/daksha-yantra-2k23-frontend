@@ -292,7 +292,7 @@ main a {
   display: block;
   color: white;
   height: 10vw;
-  font-size: 12vh;
+  font-size: 12vw;
   position: relative;
   line-height: 10vw;
   text-align: center;
@@ -868,12 +868,22 @@ main a {
   box-shadow: 0px 0px 0 rgba(255, 255, 255, 0.5);
 }
 
+/* Events */
+
+time {
+  box-shadow: var(--outer-shadow);
+}
+
 section {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   flex-flow: wrap;
   font-size: 0;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   margin-bottom: 80px;
+  margin-inline: 20px;
+  
 }
 
 section time {
@@ -884,6 +894,9 @@ section time {
   font-size: 1.8vw;
   line-height: 0;
   transition: 0.35s opacity;
+  margin: 15px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 section time.blank {
