@@ -23,6 +23,10 @@
     <link rel="icon" href="images/Logo.webp" type="image/x-icon" media="(prefers-color-scheme: dark)" />
     <link rel="icon" href="images/Logo_.webp" type="image/x-icon" media="(prefers-color-scheme:light)" />
     <title>contacts</title>
+
+
+
+
 </head>
 
 <body>
@@ -35,25 +39,26 @@
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation"
+                    onclick="location.href= '/'">
+                    <span class="material-symbols-rounded">Home</span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class=" navbar-nav  my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 160px;">
                         <li class="nav-item me-4">
-                            <a class="nav-link " aria-current="page" href="/" aria-label="go to homepage">Home</a>
+                            <a class="nav-link active" aria-current="page" href="/" aria-label="go to homepage">Home</a>
                         </li>
                         <li class="nav-item me-4">
                             <a class="nav-link" href="events.html" aria-label="go to events page">Events</a>
                         </li>
                         <!-- <li class="nav-item me-4">
-                            <a class="nav-link" href="photos.html" aria-label="go to album page">Photos</a>
-                        </li> -->
+              <a class="nav-link" href="photos.html" aria-label="go to album page">Photos</a>
+            </li> -->
                         <li class="nav-item me-4">
                             <a class="nav-link" href="about.html" aria-label="go to about page">About</a>
                         </li>
                         <li class="nav-item me-4">
-                            <a class="nav-link active" href="contacts.html" aria-label="go to contact page">Contact</a>
+                            <a class="nav-link" href="contacts.html" aria-label="go to contact page">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -73,7 +78,7 @@
     </div> -->
 
     </header>
-    <main>
+    <main style="padding-top: 10vh;">
         <h1> Contact us</h1>
         <div class="eventsContainer" id="eventsContainer">
             <div id="call" class="call_button" onclick="mailto('daksha@ceattingal.ac.in')">
@@ -135,26 +140,27 @@
 
 
         </div>
+
+        <footer class="footer">
+            <p class="text-center" style="margin-top: 24px;"> DAKSHA YANTHRA</p>
+            <div class="social">
+
+                <a href="https://instagram.com/dakshayanthra" aria-label="our instagram page"><i
+                        class="fab fa-instagram"></i></a>
+
+                <a href="contacts.html" aria-label="email us"><i class="fab fa-at"></i></a>
+
+            </div>
+
+
+
+            <p class="copyright">
+                <span style="font-family:  sans-serif;">© 2023 Daksha Yanthra, All Rights Reserved. | Trivandrum,
+                    Kerala,
+                    India.</span>
+            </p>
+        </footer>
     </main>
-
-    <footer class="footer">
-        <p class="text-center" style="margin-top: 24px;"> DAKSHA YANTHRA</p>
-        <div class="social">
-
-            <a href="https://instagram.com/dakshayanthra" aria-label="our instagram page"><i
-                    class="fab fa-instagram"></i></a>
-
-            <a href="contacts.html" aria-label="email us"><i class="fab fa-at"></i></a>
-
-        </div>
-
-
-
-        <p class="copyright">
-            <span style="font-family:  sans-serif;">© 2023 Daksha Yanthra, All Rights Reserved. | Trivandrum, Kerala,
-                India.</span>
-        </p>
-    </footer>
 
     <script>
         $(document).ready(function () {
