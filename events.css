@@ -388,16 +388,15 @@ main a {
 }
 
 /* ProShow */
-.heading-pro {
-  font-size: 8vw;
-}
 
 .header-container-pro {
+  font-size: 8vw;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 200px;
   color: white;
+  margin-bottom: 60px;
 }
 
 .proshow {

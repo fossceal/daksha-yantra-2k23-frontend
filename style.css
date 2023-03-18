@@ -42,6 +42,7 @@ body {
   background-position: center;
   background-attachment: scroll;
   background-blend-mode: screen;
+  /* background-repeat: no-repeat; */
 }
 
 ::-webkit-scrollbar {
