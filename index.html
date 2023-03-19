@@ -94,7 +94,14 @@
     <span id="welcome" class="z-depth-4"></span>
     <div class="hero">
       <div class="video-wrapper">
-        <video class="hero-vid" autoplay loop muted playsinline preload="auto">
+        <video
+          class="hero-vid"
+          id="hero-vid"
+          loop
+          muted
+          playsinline
+          preload="auto"
+        >
           <source src="./video/Hero.webm" type="video/webm" />
         </video>
       </div>
@@ -232,5 +239,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+      window.onload = function () {
+        document.getElementById("hero-vid").play();
+      };
+    </script>
   </body>
 </html>
