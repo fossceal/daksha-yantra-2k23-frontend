@@ -654,7 +654,7 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 14;
-  width: 15vmin;
+  width: 12vmin;
   transition: 400ms;
   height: auto;
 }
