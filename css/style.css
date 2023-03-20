@@ -7,6 +7,8 @@
     0 0 1vw 0.4vw #26c6da, inset 0 0 0.1vw 0.4vw #e0f7fa,
     inset 0 0 0.4vw 0.6vw #00e5ff, inset 0 0 1vw 0.4vw #26c6da;
   --effect: hover 1s linear infinite;
+
+  --bgColor: #000;
 }
 
 @font-face {
@@ -22,8 +24,6 @@
 ::-webkit-scrollbar {
   display: none;
 }
-
-
 
 html,
 body {
@@ -77,7 +77,7 @@ body {
 }
 
 .vertical-centered-box:after {
-  content: '';
+  content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
@@ -123,52 +123,6 @@ body {
   height: 120px;
   border-radius: 50%;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
-}
-
-#particles-background,
-#particles-foreground {
-  left: -51%;
-  top: -51%;
-  width: 202%;
-  height: 202%;
-  transform: scale3d(0.5, 0.5, 1);
-}
-
-#particles-background {
-  background: #2c2d44;
-  background-image: -moz-linear-gradient(45deg, #3f3251 2%, #002025 100%);
-  background-image: -webkit-linear-gradient(45deg, #3f3251 2%, #002025 100%);
-  background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0.25;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 /* .main-wrapper {
@@ -392,6 +346,25 @@ body {
   width: 100%;
   height: auto;
   z-index: 8;
+  /* box-shadow: 0 0 2px #000, 0 0 10px #000, 0 0 20px #000, 0 0 30px #000,
+    0 0 40px #000, 0 0 50px #000; */
+  box-shadow: 0px -12px 40px rgba(0, 0, 0, 1);
+  /* -webkit-animation: blink 0.7s infinite alternate;
+  animation: blink 0.7s infinite alternate; */
+}
+
+@-webkit-keyframes blink1 {
+  100% {
+    box-shadow: 0 0 3px #000, 0 0 10px #000, 0 0 20px #000, 0 0 40px #0ba9ca,
+      0 0 70px #0ba9ca, 0 0 80px #0ba9ca;
+  }
+}
+
+@keyframes blink1 {
+  100% {
+    box-shadow: 0 0 3px #000, 0 0 10px #000, 0 0 20px #000, 0 0 40px #0ba9ca,
+      0 0 70px #0ba9ca, 0 0 80px #0ba9ca;
+  }
 }
 
 .showtime {
@@ -588,8 +561,103 @@ ul {
       0 0 70px #0ba9ca, 0 0 80px #0ba9ca;
   }
 }
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 12;
+  background-color: var(--bgColor);
+  transition: 400ms;
+}
 
+.loader {
+  position: relative;
+  width: 25vmin;
+  height: 25vmin;
+  background-image: linear-gradient(#32ccbc, #f6d242, #ff52e5);
+  border-radius: 50%;
+  -webkit-animation: animate 0.5s linear infinite;
+  animation: animate 0.5s linear infinite;
+}
+.loader::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  background-color: var(--bgColor);
+  border-radius: 50%;
+  will-change: transform;
+}
+.loader span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  border-radius: 50%;
+  content: "url('./images/jokee.png')";
+}
+.loader span:nth-child(1) {
+  filter: blur(2vmin);
+}
+.loader span:nth-child(2) {
+  filter: blur(4vmin);
+}
+.loader span:nth-child(3) {
+  filter: blur(8vmin);
+}
+.loader span:nth-child(4) {
+  filter: blur(16vmin);
+}
+
+@-webkit-keyframes animate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes animate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
 /*Splash Screen*/
+
+@keyframes SCALEdown {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 0.2;
+    opacity: 0;
+  }
+}
+
+@keyframes rotater {
+  0% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+
+.joker-splash {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 14;
+  width: 150px;
+  transition: 400ms;
+  height: auto;
+}
 
 .splash {
   height: 0px;
@@ -604,9 +672,8 @@ ul {
   box-sizing: initial;
   overflow: hidden;
   border-radius: 50%;
+  /* animation: ; */
   transform: translate(-50%, -50%);
-  animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards,
-    borderRadius 0.2s 2.3s linear forwards;
 }
 
 #welcome {
@@ -621,11 +688,6 @@ ul {
   z-index: 11;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards,
-    moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards,
-    moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
-    materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards,
-    hide 2s 2.9s ease forwards;
 }
 
 @keyframes init {
