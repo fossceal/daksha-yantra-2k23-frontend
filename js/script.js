@@ -13,18 +13,18 @@ async function fetchX(uri) {
   return URI;
 }
 
-var fetch_list = ["./video/Hero.webm", "./video/Out.mp4"];
+var fetch_list = ["./video/Hero.mp4", "./video/Out.mp4"];
 
 async function fetchMaster() {
   for (let i = 0; i < fetch_list.length; i++) {
     uri = await fetchX(fetch_list[i]);
-    if (fetch_list[i] == "./video/Hero.webm") {
+    if (fetch_list[i] == "./video/Hero.mp4") {
       document.getElementById("hero-vid").src = uri;
     } else if (fetch_list[i] == "./video/Out.mp4") {
       document.getElementById("promovid").src = uri;
     }
   }
-  setTimeout(splashDestroyer, 5000);
+  setTimeout(splashDestroyer, 200);
 }
 fetchMaster();
 
