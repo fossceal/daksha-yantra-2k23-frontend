@@ -37,7 +37,7 @@ async function splashDestroyer() {
   await sleep(200);
   // elem[0].style.animation = "SCALEdown 700ms";
   await sleep(700);
-  // elem[0].remove();
+  elem[0].remove();
   document.getElementById("hero-vid").play();
 }
 
