@@ -29,7 +29,7 @@ body {
   font-family: "NewAgeVintage";
   scrollbar-color: var(--text) rgb(71, 71, 71);
   /* overflow-x: hidden; */
-  background: url(../images/Bgblack.png);
+  background: url(../images/Bgblack.webp);
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
