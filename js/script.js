@@ -35,9 +35,9 @@ async function splashDestroyer() {
   document.getElementsByClassName("splash")[0].style.animation =
     "puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards,borderRadius 0.2s 2.3s linear forwards";
   await sleep(200);
-  elem[0].style.animation = "SCALEdown 700ms";
+  // elem[0].style.animation = "SCALEdown 700ms";
   await sleep(700);
-  elem[0].remove();
+  // elem[0].remove();
   document.getElementById("hero-vid").play();
 }
 
