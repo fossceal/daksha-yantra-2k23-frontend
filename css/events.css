@@ -2,7 +2,7 @@
   --outer-shadow: 0 0 0.1vw 0.4vw #e0f7fa, 0 0 0.4vw 0.6vw #00e5ff,
     0 0 1vw 0.4vw #26c6da;
   --outer-shadow2: 0 0 0.1vw 0.4vw #f5e0fa, 0 0 0.4vw 0.6vw #e600ff,
-      0 0 1vw 0.4vw #da26ad;
+    0 0 1vw 0.4vw #da26ad;
   --inner-shadow: inset 0 0 0.1vw 0.4vw #e0f7fa, inset 0 0 0.4vw 0.6vw #00e5ff,
     inset 0 0 1vw 0.4vw #26c6da;
   --all-shadow: 0 0 0.1vw 0.4vw #e0f7fa, 0 0 0.4vw 0.6vw #00e5ff,
@@ -23,7 +23,7 @@
 html,
 body {
   margin: 0;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   overflow-x: hidden;
 }
@@ -35,7 +35,7 @@ body {
   background: url(../images/Bgblack.webp);
   background-size: cover;
   background-position: center;
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 
 ::-webkit-scrollbar {
@@ -253,7 +253,6 @@ main a {
 }
 
 /*Counter*/
-
 
 .wrapper {
   position: relative;
@@ -879,9 +878,7 @@ section {
   /* backdrop-filter: blur(10px); */
   margin-bottom: 80px;
   margin-inline: 20px;
-  
 }
-
 
 section time {
   flex: 1;
@@ -1276,7 +1273,7 @@ span .title {
 }
 
 .vertical-centered-box:after {
-  content: '';
+  content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;

@@ -437,7 +437,7 @@ ul {
 }
 
 .vertical-centered-box:after {
-  content: '';
+  content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
