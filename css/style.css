@@ -40,6 +40,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-blend-mode: screen;
+  cursor: url(../images/mouse.png), auto;
   /* background-repeat: no-repeat; */
 }
 
@@ -471,6 +472,10 @@ body {
 }
 
 .pace {
+  width: 40%;
+}
+
+.mrf {
   width: 40%;
 }
 

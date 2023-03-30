@@ -34,6 +34,7 @@ body {
   background-position: center;
   background-attachment: scroll;
   background-blend-mode: screen;
+  cursor: url(../images/mouse.png), auto;
 }
 
 ::-webkit-scrollbar {
